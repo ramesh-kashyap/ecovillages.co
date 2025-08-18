@@ -1,0 +1,733 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Ecovillages </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png">
+
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" href="{{asset('')}}assets/css/bootstrap.min.css" type="text/css" media="all">
+	<!-- carousel CSS -->
+	<link rel="stylesheet" href="{{asset('')}}assets/css/owl.carousel.min.css" type="text/css" media="all">
+	<!-- animate CSS -->
+	<link rel="stylesheet" href="{{asset('')}}assets/css/animate.css" type="text/css" media="all">
+	<!-- animated-text CSS -->
+	<link rel="stylesheet" href="{{asset('')}}assets/css/animated-text.css" type="text/css" media="all">
+	<!-- font-awesome CSS -->
+	<link rel="stylesheet" href="{{asset('')}}assets/css/all.min.css" type="text/css" media="all">
+	<!-- font-flaticon CSS -->
+	<link rel="stylesheet" href="{{asset('')}}assets/css/flaticon.css" type="text/css" media="all">
+	<!-- theme-default CSS -->
+	<link rel="stylesheet" href="{{asset('')}}assets/css/theme-default.css" type="text/css" media="all">
+	<!-- meanmenu CSS -->
+	<link rel="stylesheet" href="{{asset('')}}assets/css/meanmenu.min.css" type="text/css" media="all">
+	<!-- transitions CSS -->
+	<link rel="stylesheet" href="{{asset('')}}assets/css/owl.transitions.css" type="text/css" media="all">
+	<!-- venobox CSS -->
+	<link rel="stylesheet" href="{{asset('')}}venobox/venobox.css" type="text/css" media="all">
+	<!-- bootstrap icons -->
+	<link rel="stylesheet" href="{{asset('')}}assets/css/bootstrap-icons.css" type="text/css" media="all">
+	<!-- Main Style CSS -->
+	<link rel="stylesheet" href="{{asset('')}}assets/css/style.css" type="text/css" media="all">
+	<!-- responsive CSS -->
+	<link rel="stylesheet" href="{{asset('')}}assets/css/responsive.css" type="text/css" media="all">
+	<!-- modernizr js -->
+	<script src="{{asset('')}}assets/js/vendor/modernizr-3.5.0.min.js"></script>
+</head>
+
+<body>
+
+	<!-- loder -->
+	<div class="loader-wrapper">
+		<span class="loader"></span>
+		<div class="loder-section left-section"></div>
+		<div class="loder-section right-section"></div>
+	</div>
+
+
+	<!--==================================================-->
+	<!-- Start Echofy Top Header Area -->
+	<!--==================================================-->
+	<div class="top-header-area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 col-md-6">
+					<div class="top-header-info">
+						<ul>
+							<li><i class="bi bi-geo-alt"></i>New market Sandigo - California</li>
+							<li><i class="bi bi-envelope-open"></i> ecovillages@gmail.com</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="top-header-right">
+						<div class="top-header-contact">
+							<span><i class="bi bi-telephone-fill"></i>+123 (4567) 890</span>
+						</div>
+						<div class="top-header-social-icon">
+							<ul>
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--==================================================-->
+	<!-- End Echofy Top Header Area -->
+	<!--==================================================-->
+
+
+
+	<!--==================================================-->
+	<!-- Start Echofy Header Area -->
+	<!--==================================================-->
+	<div class="header-area" id="sticky-header">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-3">
+					<div class="header-logo">
+						<a href="{{route('index')}}"><img src="{{asset('')}}assets/images/home1/Logo-ecovillages.png" style="width: 60px;height:60px;filter:'brightnesh(0.55) invert(0)'" alt="logo"></a>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="header-menu">
+						<ul>
+							<li class="menu-item-has-children"><a href="{{route('index')}}">Home</a>
+
+							</li>
+							<li><a href="{{route('about-us')}}">About</a></li>
+							<!-- <li class="menu-item-has-children"><a href="#">Service<i class="fas fa-chevron-down"></i></a>
+                           <ul class="sub-menu">
+					      	  <li><a href="service.html">Service</a></li>
+					      	  <li><a href="service-details.html">Service Details</a></li>
+						   </ul>
+						</li> -->
+							<li class="menu-item-has-children"><a href="#">Services<i class="fas fa-chevron-down"></i></a>
+								<ul class="sub-menu">
+									<!-- <li><a href="about.html">About</a></li> -->
+									<li><a href="{{route('services')}}">Service</a></li>
+									<li><a href="{{route('partners')}}">Team</a></li>
+									<li><a href="{{route('faq')}}">Faqs</a></li>
+									<li><a href="{{route('blog-details')}}">Blogs</a></li>
+								</ul>
+							</li>
+							<!-- <li class="menu-item-has-children"><a href="#">Blog<i class="fas fa-chevron-down"></i></a>
+                           <ul class="sub-menu">
+					      	  <li><a href="blog-grid.html">Blog Grid</a></li>
+					      	  <li><a href="blog-list.html">Blog List</a></li>
+					      	  <li><a href="blog-2column.html">Blog 2column</a></li>
+					      	  <li><a href="blog-details.html">Blog Details</a></li>
+						   </ul>
+						</li> -->
+							<li><a href="{{route('contact-us')}}">Contact</a></li>
+						</ul>
+						<div class="header-secrch-icon search-box-outer">
+							<a href="#"><i class="bi bi-search"></i></a>
+						</div>
+						<div class="header-button">
+						
+							<a href="{{ route('login') }}">Log in Now</a>
+							
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none ">
+		<div class="mobile-menu">
+			<nav class="header-menu">
+				<ul class="nav_scroll">
+					<li class="menu-item-has-children"><a href="#">Home</a>
+
+					</li>
+					<li><a href="{{route('about-us')}}">About</a></li>
+					<!-- <li class="menu-item-has-children"><a href="#">Service</a>
+                   <ul class="sub-menu">
+			      	  <li><a href="service.html">Service</a></li>
+			      	  <li><a href="service-details.html">Service Details</a></li>
+				   </ul>
+				</li> -->
+					<li class="menu-item-has-children"><a href="#">Services</a>
+						<ul class="sub-menu">
+							<!-- <li><a href="about.html">About</a></li> -->
+							<li><a href="service.html">Service</a></li>
+							<li><a href="team.html">Team</a></li>
+							<li><a href="faqs.html">Faqs</a></li>
+						</ul>
+					</li>
+					<!-- <li class="menu-item-has-children"><a href="#">Blog</a>
+                   <ul class="sub-menu">
+			      	  <li><a href="blog-grid.html">Blog Grid</a></li>
+			      	  <li><a href="blog-list.html">Blog List</a></li>
+			      	  <li><a href="blog-2column.html">Blog 2column</a></li>
+			      	  <li><a href="blog-details.html">Blog Details</a></li>
+				   </ul>
+				</li> -->
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!--==================================================-->
+	<!-- End Main Menu Area -->
+	<!--==================================================-->
+
+
+<!--==================================================-->
+<!-- Start Echofy Breadcumb Area -->
+<!--==================================================-->
+<div class="breadcumb-area">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-12 text-center">
+				<div class="breadcumb-content">
+					<div class="breadcumb-title">
+						<h4>Climate Solutions: Building a Sustainable Future Together</h4>
+					</div>
+					<ul>
+						<li><a href="index.html"><img src="assets/images/inner-images/breadcumb-text-shape.png" alt="">Echofy</a></li>
+						<li>Blog Details</li>
+						<li class="khela-hbe">Climate Solutions: Building a Sustainable Future Together</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--==================================================-->
+<!-- End Echofy Breadcumb Area -->
+<!--==================================================-->
+
+
+
+
+<!--==================================================-->
+<!-- Strat Echofy Blog Details Area-->
+<!--==================================================-->
+<div class="blog-details-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="blog-details-thumb">
+							<img src="assets/images/inner-images/blog-details-thumb.jpg" alt="">
+						</div>
+						<div class="blog-details-content">
+							<div class="meta-blog">
+								<span class="mate-text">By Author</span>
+								<span><i class="fas fa-calendar-alt"></i>05 January, 2024</span>
+								<span><img src="assets/images/inner-images/category-icon.png" alt="">Environment</span>
+							</div>
+							<h4 class="blog-details-title">🌱 Renewable Energy Revolution</h4>
+
+							<p class="blog-details-desc">The reality of climate change is no longer a distant concern—it's a present-day crisis affecting communities, economies, and ecosystems around the globe. From rising sea levels to intense heatwaves and unpredictable weather patterns, the impacts are becoming more visible and alarming. But amidst these challenges lies a powerful truth: we have the solutions to turn the tide.</p>	
+
+							<p class="blog-details-desc">Tackling climate change requires a combination of innovative technologies, policy changes, and conscious lifestyle choices. Let’s explore some of the most impactful climate solutions available today.</p>
+
+							<div class="blog-details-author-talk">
+								<div class="blog-details-quote">
+									<img src="assets/images/inner-images/blog-details-quote.png" alt="">
+								</div>
+								<div class="blog-details-author-title">
+									<p>Fossil fuels are the biggest contributors to global greenhouse gas emissions. Transitioning to renewable energy sources like solar, wind, hydro, and geothermal is essential.</p>
+									<span>CEO & Founder</span>
+								</div>
+							</div>
+
+                            <h3 class="blog-details-title">Clean Enviromnent Policy</h3>
+
+                            <p class="blog-details-desc two">Reduces dependence on carbon-emitting fuels, lowers energy costs long-term, and creates green jobs.</p>
+
+                            <div class="blog-details-list-item">
+                            	<ul>
+                            		<li><i class="bi bi-check-circle-fill"></i>Solar panels for homes and businesses</li>
+                            		<li><i class="bi bi-check-circle-fill"></i>Offshore and onshore wind farms</li>
+                            		<li><i class="bi bi-check-circle-fill"></i>Government incentives for clean energy</li>
+                            		<li><i class="bi bi-check-circle-fill"></i>Investment in smart grids and battery storage</li>
+                            	</ul>
+                            </div>
+                            <div class="row">
+                            	<div class="col-lg-6 col-md-6">
+                            		<div class="blog-details-thumb two">
+                            			<img src="assets/images/inner-images/services-details-benifis-thumb-1.png" alt="">
+                            		</div>
+                            	</div>                            	
+                            	<div class="col-lg-6 col-md-6">
+                            		<div class="blog-details-thumb">
+                            			<img src="assets/images/inner-images/services-details-benifis-thumb-2.png" alt="">
+                            		</div>
+                            	</div>
+                            </div>
+
+                            <h3 class="blog-details-title two">Tree Plantation for Human</h3>
+
+                            <p class="blog-details-desc three">The transportation sector accounts for nearly a quarter of global emissions. Cleaner, smarter transportation options are key to reducing this footprint.</p>
+						</div>
+						<div class="blog-details-socila-box">
+						    <div class="row align-items-center">
+	                        	<div class="col-lg-6 col-md-6">
+	                        		<div class="blog-details-category">
+	                        			<span><a href="#">Environmental</a></span>
+	                        			<span><a class="active-class" href="#">Renewable</a></span>
+	                        		</div>
+	                        	</div>
+	                        	<div class="col-lg-6 col-md-6">
+	                        		<div class="blog-details-social-icon">
+	                        			<ul>
+	                        				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+	                        				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+	                        				<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+	                        				<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+	                        			</ul>
+	                        		</div>
+	                        	</div>
+	                        </div>
+	                    </div>
+	                    <div class="blog-details-post">
+	                    	<div class="row">
+	                    		<div class="blog-post-list owl-carousel">
+		                    		<div class="col-lg-12">
+		                    			<div class="blog-post-box">
+											<div class="blog-post-thumb">
+												<img src="assets/images/inner-images/blog-post-1.png" alt="">
+											</div>
+											<div class="blog-post-content">
+												<a href="#">Progressively Syndicate Vista Seamless...</a>
+												<p>August 10, 2024</p>
+											</div>
+										</div>
+		                    		</div>	                    		
+		                    		<div class="col-lg-12">
+		                    			<div class="blog-post-box style-two">
+											<div class="blog-post-content">
+												<a href="#">Dramatically Architect new model before...</a>
+												<p>August 10, 2024</p>
+											</div>
+											<div class="blog-post-thumb">
+												<img src="assets/images/inner-images/blog-post-2.png" alt="">
+											</div>
+										</div>
+		                    		</div>		                    		
+		                    	    <div class="col-lg-12">
+		                    			<div class="blog-post-box">
+											<div class="blog-post-thumb">
+												<img src="assets/images/inner-images/blog-post-1.png" alt="">
+											</div>
+											<div class="blog-post-content">
+												<a href="#">Progressively Syndicate Vista Seamless...</a>
+												<p>August 10, 2024</p>
+											</div>
+										</div>
+		                    		</div>	
+		                            <div class="col-lg-12">
+		                    			<div class="blog-post-box style-two">
+											<div class="blog-post-content">
+												<a href="#">Dramatically Architect new model before...</a>
+												<p>August 10, 2024</p>
+											</div>
+											<div class="blog-post-thumb">
+												<img src="assets/images/inner-images/blog-post-2.png" alt="">
+											</div>
+										</div>
+		                    		</div>
+		                    	</div>
+	                    	</div>
+	                    </div>
+	                    <div class="single-comment-area">
+	                    	<div class="row">
+								<div class="col-lg-12">
+									<div class="blog-details-comment-title">
+										<h4>‘2’ Comments</h4>
+									</div>
+									<div class="blog-details-comment">
+									    <div class="blog-details-comment-reply">
+									    	<a href="#">Reply</a>
+									    </div>
+									    <div class="blog-details-comment-thumb">
+									    	<img src="assets/images/inner-images/blog-details-author-1.png" alt="">
+									    </div>
+									    <div class="blog-details-comment-content">
+										   <h2>Michael jordan</h2>
+										   <span>22 August, 2024</span>
+										   <p>Interactively visualize top-line internal or "organic" sources rather than top-line niche mark
+                                            unleash 24/7 opportunities after high standards in process improvements. Uniquely deploy 
+                                            methodologies with reliable information.  
+                                           </p>
+									    </div>
+								    </div>									
+								    <div class="blog-details-comment style-two">
+									    <div class="blog-details-comment-reply">
+									    	<a href="#">Reply</a>
+									    </div>
+									    <div class="blog-details-comment-thumb">
+									    	<img src="assets/images/inner-images/blog-details-author-2.png" alt="">
+									    </div>
+									    <div class="blog-details-comment-content">
+										   <h2>Johon Alex</h2>
+										   <span>22 August, 2024</span>
+										   <p>Interactively visualize top-line internal or "organic" sources rather than top-line niche mark
+                                            unleash 24/7 opportunities after high standards in process.
+                                           </p>
+									    </div>
+								    </div>
+								</div>
+							</div>
+							<div class="blog-details-contact">
+								<div class="blog-details-contact-title">
+									<h4>Leave A Comments</h4>
+								</div>
+								<form action="#">
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="contact-input-box">
+												<input type="text" name="Name" placeholder="Full Name*" required="">
+											</div>
+										</div>					
+										<div class="col-lg-6">
+											<div class="contact-input-box">
+												<input type="text" name="Email" placeholder="Email Address*" required="">
+											</div>
+										</div>							
+										<div class="col-lg-12">
+											<div class="contact-input-box">
+												<input type="text" name="Web Site" placeholder="Your Website*" required="">
+											</div>
+										</div>									
+										<div class="col-lg-12">
+											<div class="contact-input-box">
+												<textarea name="Message" id="Meassage" placeholder="Write Comments..."></textarea>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<div class="input-check-box">
+										      <input type="checkbox">
+											     <span>Save your email info in the browser for next comments.</span>
+											  </div>
+										</div>
+										<div class="col-lg-12">
+											<div class="blog-details-submi-button">
+												<button type="submit">Post Comments</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+	                    </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="widget-sidber">
+						   <div class="widget_search">
+						     <form action="#" method="get">
+						    	<input type="text" name="s" value="" placeholder="Search Here" title="Search for:">
+						    	<button type="submit" class="icons">
+						    		<i class="fa fa-search"></i>
+						    	</button>
+						     </form>
+				    	   </div>
+				    	</div>
+				    	<div class="widget-sidber">
+							<div class="widget-sidber-content">
+								<h4>Categories</h4>
+							</div>
+							<div class="widget-category">
+								<ul>
+									<li><a href="#"><img src="assets/images/inner-images/category-icon.png" alt="">Ocean Cleaning<i class="bi bi-arrow-right"></i></a></li>
+									<li><a href="#"><img src="assets/images/inner-images/category-icon.png" alt="">Dust Recycling<i class="bi bi-arrow-right"></i></a></li>
+									<li><a href="#"><img src="assets/images/inner-images/category-icon.png" alt="">Plant Seedlings<i class="bi bi-arrow-right"></i></a></li>
+									<li><a href="#"><img src="assets/images/inner-images/category-icon.png" alt="">Renewable Energy<i class="bi bi-arrow-right"></i></a></li>
+									<li><a href="#"><img src="assets/images/inner-images/category-icon.png" alt="">Environmental<i class="bi bi-arrow-right"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="widget-sidber">
+							<div class="widget-sidber-content">
+								<h4>Popular Post</h4>
+							</div>
+							<div class="sidber-widget-recent-post">
+								<div class="recent-widget-thumb">
+									<img src="assets/images/inner-images/recent-post-1.png" alt="">
+								</div>
+								<div class="recent-widget-content">
+									<a href="#">Dramatically Architect new model before...</a>	
+									<p> Jan, 26 2024</p>							
+								</div>
+							</div>							
+							<div class="sidber-widget-recent-post">
+								<div class="recent-widget-thumb">
+									<img src="assets/images/inner-images/recent-post-2.png" alt="">
+								</div>
+								<div class="recent-widget-content">
+									<a href="#">Progressively Syndicate Vista Seamless...</a>	
+									<p> Jan, 26 2024</p>							
+								</div>
+							</div>							
+							<div class="sidber-widget-recent-post">
+								<div class="recent-widget-thumb">
+									<img src="assets/images/inner-images/recent-post-3.png" alt="">
+								</div>
+								<div class="recent-widget-content">
+									<a href="#">Completely Leverage Existing Customer...</a>	
+									<p> Jan, 26 2024</p>							
+								</div>
+							</div>
+						</div>						
+						<div class="widget-sidber">
+							<div class="widget-sidber-content">
+								<h4>Tags</h4>
+							</div>	
+							<div class="widget-catefories-tags">
+                                <a href="#">Environmental</a>
+                                <a href="#">Ecology</a>
+                                <a href="#">Seedlings</a>
+                                <a href="#">Tree Plantation</a>
+                                <a href="#">Recycling</a>
+                                <a href="#">Cleaning</a>
+                            </div>											
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--==================================================-->
+<!-- End Echofy Blog Details Area-->
+<!--==================================================-->
+
+
+
+<!--==================================================-->
+<!-- Strat Echofy Footer Area-->
+<!--==================================================-->
+<div class="footer-area home-two">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer-social-address">
+					<div class="row align-items-center">
+						<div class="col-lg-6 col-md-6">
+							<div class="footer-social-address-content">
+								<h4>Join Team As A Volunteer</h4>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6">
+			                <div class="echofy-button">
+								<a href="contact.html">Join Us Now <img src="assets/images/home1/button-shape.png" alt=""></a>
+								<img class="two" src="assets/images/home1/button-shape-2.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row add-footer-class">
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="footer-logo">
+					<a href="index.html"><img src="assets/images/home1/logo.png" alt="logo"></a>
+				</div>
+				<p class="footer-desc">Proactively restore timely alignments after client environmentals</p>
+				<div class="footer-subscribe">
+					<form action="#">
+						<div class="single-newsletter-box">
+							<input type="text" name="Email" placeholder="Enter E-Mail" required="">
+							<button type="submit"><i class="bi bi-arrow-right-short"></i></button>
+						</div>
+					</form>
+				</div>
+				<div class="footer-widget-social-icon">
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="footer-widget-content">
+					<div class="footer-widget-title">
+						<h4>Company</h4>
+					</div>
+					<div class="footer-widget-menu">
+						<ul>
+							<li><a href="index.html"><i class="fas fa-angle-right"></i>Home</a></li>
+							<li><a href="about.html"><i class="fas fa-angle-right"></i>About Us</a></li>
+							<li><a href="service.html"><i class="fas fa-angle-right"></i>Our Services</a></li>
+							<li><a href="team.html"><i class="fas fa-angle-right"></i>Meet Our Team</a></li>
+							<li><a href="blog-list.html"><i class="fas fa-angle-right"></i>Latest Blog</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>			
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="footer-widget-content">
+					<div class="footer-widget-title">
+						<h4>Latest Blog</h4>
+					</div>
+                    <div class="footer-widget-blog">
+                    	<div class="footer-widget-blog-thumb">
+                    		<img src="assets/images/home2/footer-widget-1.png" alt="">
+                    	</div>
+                    	<div class="footer-widget-blog-content">
+                    		<a href="blog-details.html">Top 10 Recycling tips for Environment</a>
+                    		<p>Nov 16, 2024</p>
+                    	</div>
+                    </div>                 
+                   <div class="footer-widget-blog">
+                    	<div class="footer-widget-blog-thumb">
+                    		<img src="assets/images/home2/footer-widget-2.png" alt="">
+                    	</div>
+                    	<div class="footer-widget-blog-content">
+                    		<a href="blog-details.html">How Every Individual Can Make a...</a>
+                    		<p>Nov 16, 2024</p>
+                    	</div>
+                    </div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="footer-widget-content">
+					<div class="footer-widget-title">
+						<h4>Contact Us</h4>
+					</div>
+					<div class="footer-widget-info">
+						<div class="footer-widget-info-icon">
+							 <i class="bi bi-geo-alt"></i>
+						</div>
+					    <div class="footer-widget-info-content">
+					    	<h4>Address</h4>
+					    	<p>02/B Philosophy Market Road California, USA</p>
+					    </div>
+					</div>					
+					<div class="footer-widget-info">
+						<div class="footer-widget-info-icon">
+							 <i class="bi bi-geo-alt"></i>
+						</div>
+					    <div class="footer-widget-info-content">
+					    	<h4>Call Us</h4>
+					    	<p>+880 123 (4567) 890</p>
+					    </div>
+					</div>					
+					<div class="footer-widget-info">
+						<div class="footer-widget-info-icon">
+							 <i class="bi bi-geo-alt"></i>
+						</div>
+					    <div class="footer-widget-info-content">
+					    	<h4>Address</h4>
+					    	<p>example@yahoo.com</p>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom-area">
+		<div class="container">
+			<div class="row footer-bottom align-items-center">
+				<div class="col-md-12 text-center">
+					<div class="footer-bottom-content">
+						<h4>© Copyrights 2024 Echofy All rights reserved by <a href="#">Dream IT.</a></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--==================================================-->
+<!-- End Echofy Footer Area-->
+<!--==================================================-->
+
+
+
+<!--==================================================-->
+<!-- End Echofy search-popup Area-->
+<!--==================================================-->
+<div class="search-popup">
+	<button class="close-search style-two"><span class="flaticon-multiply"><i class="far fa-times-circle"></i></span></button>
+	<button class="close-search"><i class="bi bi-arrow-up"></i></button>
+	<form method="post" action="#">
+		<div class="form-group">
+			<input type="search" name="search-field" value="" placeholder="Search Here" required="">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</div>
+	</form>
+</div>
+<!--==================================================-->
+<!-- End Echofy search-popup Area-->
+<!--==================================================-->
+
+
+
+<!--==================================================-->
+<!-- Start scrollup section Section -->
+<!--==================================================-->
+<div class="prgoress_indicator active-progress">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 0;"></path>
+        </svg>
+ </div>
+<!--==================================================-->
+<!-- End scrollup section Section -->
+<!--==================================================-->
+
+
+
+	<!-- jquery js -->
+	<script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- carousel js -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- counterup js -->
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<!-- waypoints js -->
+	<script src="assets/js/waypoints.min.js"></script>
+	<!-- wow js -->
+	<script src="assets/js/wow.js"></script>
+	<!-- imagesloaded js -->
+	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<!-- venobox js -->
+	<script src="venobox/venobox.js"></script>
+
+	<!--  animated-text js -->
+	<script src="assets/js/animated-text.js"></script>
+	<!-- venobox min js -->
+	<script src="venobox/venobox.min.js"></script>
+	<!-- isotope js -->
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<!-- jquery meanmenu js -->
+	<script src="assets/js/jquery.meanmenu.js"></script>
+
+	<!-- jquery scrollup js -->
+	<script src="assets/js/jquery.scrollUp.js"></script>
+	<!-- theme js -->
+	<script src="assets/js/theme.js"></script>
+    <!-- coustom js -->
+	<script src="assets/js/coustom.js"></script>
+	<!-- barfiller -->
+	<script src="assets/js/jquery.barfiller.js"></script>
+	<!-- barfiller -->
+	<script src="assets/js/vanilla-tilt.min.js"></script>
+	<script src="assets/js/silik-slider.js"></script>
+
+</body>
+</html>

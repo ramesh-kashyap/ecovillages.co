@@ -1,0 +1,6 @@
+[16-Aug-2025 08:10:35 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\UserPanel\Team::LevelTeam() in /home/ecovillagesco/public_html/app/Http/Controllers/UserPanel/Team.php on line 119
+[16-Aug-2025 08:11:35 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\UserPanel\Team::LevelTeam() in /home/ecovillagesco/public_html/app/Http/Controllers/UserPanel/Team.php on line 119
+[16-Aug-2025 10:06:04 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\UserPanel\Bonus::cashback_income() in /home/ecovillagesco/public_html/app/Http/Controllers/UserPanel/Bonus.php on line 104
+[16-Aug-2025 10:08:33 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\UserPanel\Bonus::cashback_income() in /home/ecovillagesco/public_html/app/Http/Controllers/UserPanel/Bonus.php on line 104
+[16-Aug-2025 11:23:46 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Admin\DepositController::deposit_list() in /home/ecovillagesco/public_html/app/Http/Controllers/Admin/DepositController.php on line 102
+[17-Aug-2025 10:43:51 UTC] PHP Fatal error:  Trait "Carbon\Carbon\Carbon" not found in /home/ecovillagesco/public_html/app/Http/Controllers/Cron.php on line 24
