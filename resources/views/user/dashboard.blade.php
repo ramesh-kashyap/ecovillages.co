@@ -1,494 +1,246 @@
+	<!--**********************************
+            Content body start
+        ***********************************-->
+	<div class="content-body">
+		<!-- row -->
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="row">
+						<div class="col-xl-6">
+							<div class="row">
+								<div class="col-xl-12">
+									<div class="card tryal-gradient">
+										<div class="card-body tryal row">
+											<div class="col-xl-7 col-sm-6">
+												<h2>Manage your project in one touch</h2>
+												<span>Let Fillow manage your project automatically with our best AI systems </span>
+												<a href="javascript:void(0);" class="btn btn-rounded  fs-18 font-w500">Try Free Now</a>
+											</div>
+											<div class="col-xl-5 col-sm-6">
+												<img src="{{asset('')}}users/images/chart.png" alt="" class="sd-shape">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-12">
+									<div class="row">
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+										<div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body px-4 pb-0">
+													<div>
+														<h4 class="fs-18 font-w600 mb-4 text-nowrap">Salary Income</h4>
+														<div class="d-flex align-items-center">
+															<h2 class="fs-32 font-w700 mb-2">{{ currency() }} {{ number_format(Auth::user()->salaryBonus->sum('comm'), 2) }} </h2>
 
-<!-- Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<div class="dashboard-body">
-
-    <div class="container-fluid">
-        <div class="flex-between mb-32 gap-3">
-            <h2 class="fs-30">Dashboard</h2>
-            
-            @if(Auth::user()->event==0)
-            <div class="flex-align gap-2">
-                <a  data-toggle="modal" data-target="#exampleModalLong" class="btn btn--base btn--sm">Became A Distributor</a>
-            </div>
-            
-            @endif
-            
-        </div>
-        <div class="notice"></div>
-        <!-- <div class="row justify-content-center">
-                <div class="col-md-12">
-
-                    <div class="alert alert--info mb-3" role="alert">
-                        <div class="alert__icon"><i class="fas fa-exclamation-circle"></i>
-                        </div>
-                        <div class="alert__content">
-                            <h6 class="alert__title">KYC Verification Required</h6>
-                            <p class="alert__desc">Complete KYC to unlock the full potential of our platform! KYC helps us verify your identity and keep things secure. It is quick and easy just follow the on-screen instructions. Get started with KYC verification now! <a href="https://script.viserlab.com/viserasset/user/kyc-form">Click Here to Submit Documents</a>
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-md-12">
-                    <div class="alert alert--danger mb-3" role="alert">
-                        <div class="alert__icon"><i class="fas fa-exclamation-triangle"></i></div>
-                        <div class="alert__content">
-                            <h6 class="alert__title">Empty Balance</h6>
-                            <p class="alert__desc"><i>Your balance is empty. Please make <a href="https://script.viserlab.com/viserasset/user/deposit" class="link-color">deposit</a> for your next investment.</i></p>
-                        </div>
-                    </div>
+														</div>
+													</div>
+													<div class="progress default-progress">
 
 
+														<div class="progress-bar bg-gradient1 progress-animated" style="width: 30%; height:10px;" role="progressbar">
+															<span class="sr-only">45% Complete</span>
+														</div>
+													</div>
+													<div class="d-flex align-items-end mt-2 pb-3 justify-content-between">
+														<span>76 left from target</span>
+														<h4 class="mb-0">42</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body px-4 pb-0">
+													<div>
+														<h4 class="fs-18 font-w600 mb-4 text-nowrap">Contract Profit Sharing</h4>
+														<div class="d-flex align-items-center">
+															<h2 class="fs-32 font-w700 mb-2">{{ currency() }} {{ number_format(Auth::user()->contractpBonus->sum('comm'), 2) }}</h2>
+
+														</div>
+													</div>
+													<div class="progress default-progress">
 
 
-                    <div class="alert alert--warning mb-3" role="alert">
-                        <div class="alert__icon"><i class="fas fa-user-lock"></i>
-                        </div>
-                        <div class="alert__content">
-                            <h6 class="alert__title">2FA Authentication</h6>
-                            <p class="alert__desc"><i>To keep safe your account, Please enable <a href="https://script.viserlab.com/viserasset/user/twofactor" class="link-color">2FA</a> security.</i>
-                                It will make secure your account and balance.</p>
-                        </div>
-                    </div>
+														<div class="progress-bar bg-gradient1 progress-animated" style="width: 20%; height:10px;" role="progressbar">
+															<span class="sr-only">45% Complete</span>
+														</div>
+													</div>
+													<div class="d-flex align-items-end mt-2 pb-3 justify-content-between">
+														<span>76 left from target</span>
+														<h4 class="mb-0">42</h4>
+													</div>
+												</div>
+											</div>
+										</div>
 
-                </div>
-            </div> -->
+										<!-- <div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body d-flex px-4  justify-content-between">
+													<div>
+														<div class="">
+															<h2 class="fs-32 font-w700">892</h2>
+															<span class="fs-18 font-w500 d-block">New Projects</span>
+															<span class="d-block fs-16 font-w400"><small class="text-success">-2%</small> than last month</span>
+														</div>
+													</div>
+													<div id="NewCustomers1"></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body d-flex px-4  justify-content-between">
+													<div>
+														<div class="">
+															<h2 class="fs-32 font-w700">562</h2>
+															<span class="fs-18 font-w500 d-block">Total Clients</span>
+															<span class="d-block fs-16 font-w400"><small class="text-danger">-2%</small> than last month</span>
+														</div>
+													</div>
+													<div id="NewCustomers"></div>
+												</div>
+											</div>
+										</div> -->
+									</div>
 
-
-
-        <div class="mb-4">
-            <div class="row gy-4">
-                <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="24" height="24" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                                <g>
-                                    <g fill="currentColor">
-                                        <path
-                                            d="M18 7h.75a.75.75 0 0 0-.75-.75zm0 4h-.75zM6 7v-.75a.75.75 0 0 0-.75.75zm11.25 0v4h1.5V7zm0 4v8h1.5v-8zM16 20.25H8v1.5h8zM6.75 19V7h-1.5v12zM6 7.75h12v-1.5H6zm0-4h12v-1.5H6zM2.75 7A3.25 3.25 0 0 1 6 3.75v-1.5A4.75 4.75 0 0 0 1.25 7zM6 10.25A3.25 3.25 0 0 1 2.75 7h-1.5A4.75 4.75 0 0 0 6 11.75zM21.25 7A3.25 3.25 0 0 1 18 10.25v1.5A4.75 4.75 0 0 0 22.75 7zm1.5 0A4.75 4.75 0 0 0 18 2.25v1.5A3.25 3.25 0 0 1 21.25 7zm-5.5 12c0 .69-.56 1.25-1.25 1.25v1.5A2.75 2.75 0 0 0 18.75 19zM8 20.25c-.69 0-1.25-.56-1.25-1.25h-1.5A2.75 2.75 0 0 0 8 21.75zM13.47 13.116a.75.75 0 1 0 1.06-1.06zm-.763-1.823-.53.53zm-1.414 0 .53.53zm-1.823.763a.75.75 0 1 0 1.06 1.06zm1.78 4.53a.75.75 0 0 0 1.5 0zm1.5-5a.75.75 0 0 0-1.5 0zm1.78.47-1.293-1.293-1.06 1.06 1.293 1.293zm-3.767-1.293L9.47 12.055l1.06 1.061 1.293-1.293zm2.474 0a1.75 1.75 0 0 0-2.474 0l1.06 1.06a.25.25 0 0 1 .354 0zm-.487 5.823v-5h-1.5v5z"
-                                            fill="currentColor" opacity="1" data-original="#000000" class=""></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Available Balance</p>
-                            <h5 class="count">{{ currency() }}{{ number_format(Auth::user()->available_balance(), 2) }}</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet">
-                                <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
-                                <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Total Deposit </p>
-                            <h5 class="count">{{ currency() }} {{ Auth::user()->investments->sum('amount') }} </h5>
-                        </div>
-                    </div>
-                </div>
-                                <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet">
-                                <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
-                                <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Top Up Balance </p>
-                            <h5 class="count">{{ currency() }} {{ number_format(Auth::user()->FundBalance(), 2) }} </h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet-minimal">
-                                <path d="M17 14h.01" />
-                                <path d="M7 7h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14" />
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Interest Wallet</p>
-                            <h5 class="count">{{ currency() }}0.00 </h5>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="24" height="24" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                                <g>
-                                    <path
-                                        d="M11.18 23.938c-.854.975.62 2.305 1.499 1.325a20.45 20.45 0 0 1 7.764-5.381c.3-.057.671.168 1.02.118.483-.01 11.874.067 11.931-.119a20.313 20.313 0 0 1 7.227 4.815.999.999 0 0 0 .719.304c.843.027 1.344-1.095.719-1.696-2.024-2.089-4.4-3.71-7.047-4.881.49-.87.46-1.953-.006-2.82C38.859 13.076 42.204 4.77 35.21 4H18.63c-1.24 0-2.4.55-3.185 1.507-2.525 3.264.728 8.159 3.389 10.095-.463.864-.498 1.942-.012 2.81-2.878 1.26-5.56 3.179-7.641 5.526zM21.465 18c-1.312-.023-1.318-1.98 0-2h10.912c1.312.02 1.318 1.976 0 2zm-3.483-6.085c-1.266-1.732-2.697-5.646.649-5.915h16.58c3.344.269 1.917 4.184.648 5.915a8.884 8.884 0 0 1-2.388 2.314A2.971 2.971 0 0 0 32.376 14H21.464c-.383 0-.748.093-1.094.23a8.87 8.87 0 0 1-2.389-2.315zM4 53.27c-.075 3.62 3.117 6.802 6.73 6.73h19.98a1 1 0 1 0 0-2H10.73a4.698 4.698 0 0 1-3.344-1.389c-2.365-2.213-1.527-6.477 1.455-7.685.505-.209.747-.85.506-1.34-2.745-5.744-2.518-12.894.578-18.411a1 1 0 0 0-1.75-.97C6.379 31.445 5.43 35.161 5.43 38.95c0 2.988.579 5.881 1.721 8.616-.42.268-.814.583-1.177.946A6.67 6.67 0 0 0 4 53.27zM59.165 40.236c-1.03-.094-2.031-.457-2.44-1.523-.457-.987.012-2.007.66-2.775a1 1 0 0 0-.108-1.288l-3.927-3.928a.998.998 0 0 0-1.288-.107l-.583.416c-1.27.978-3.388.134-3.597-1.49l-.118-.706a1 1 0 0 0-.987-.835h-5.554a1 1 0 0 0-.987.835l-.118.707c-.202 1.593-2.309 2.484-3.598 1.489-.549-.43-1.228-.938-1.87-.309l-3.927 3.928c-.619.645-.135 1.307.308 1.871.98 1.27.133 3.388-1.491 3.597l-.705.118a1 1 0 0 0-.835.986v5.556a1 1 0 0 0 .835.986l.706.118c1.595.205 2.486 2.305 1.49 3.598-.429.547-.936 1.229-.308 1.87l3.927 3.928a1 1 0 0 0 1.288.107c1.798-1.665 4.205-.677 4.298 1.78a1 1 0 0 0 .987.835h5.554a1 1 0 0 0 .987-.835l.118-.706c.203-1.594 2.306-2.485 3.598-1.49.547.429 1.227.936 1.87.309l3.927-3.928a1 1 0 0 0 .108-1.288c-1.664-1.797-.678-4.205 1.78-4.298a1 1 0 0 0 .835-.986v-5.556a1 1 0 0 0-.835-.986zM58 45.933c-2.892.471-4.456 4.205-2.734 6.6l-2.733 2.733c-2.373-1.709-6.127-.182-6.6 2.734h-3.866c-.277-1.402-1.223-2.559-2.585-3.121a4.24 4.24 0 0 0-4.015.387l-2.733-2.733c.797-1.191.943-2.683.373-4.049A4.234 4.234 0 0 0 30 45.934v-3.867c2.892-.471 4.456-4.205 2.734-6.6l2.733-2.733c2.378 1.71 6.125.181 6.6-2.734h3.866c.471 2.892 4.202 4.456 6.6 2.734l2.733 2.733c-1.708 2.376-.183 6.124 2.734 6.6v3.866z"
-                                        fill="currentColor" opacity="1" data-original="currentColor"></path>
-                                    <path d="M51.042 39.146a1 1 0 0 0-.416 1.352c2.69 4.81-1.108 11.13-6.626 11.002-4.014.086-7.586-3.481-7.5-7.5-.128-5.516 6.193-9.318 11.001-6.626a1 1 0 0 0 1.353-.416c.87-1.874-3.655-2.458-4.854-2.458-5.238 0-9.5 4.262-9.5 9.5.498 12.587 18.498 12.597 19 0 .007-1.193-.594-5.728-2.458-4.854z" fill="currentColor" opacity="1" data-original="currentColor"></path>
-                                    <path d="M43.466 41.795h2.67c1.313-.02 1.316-1.978 0-2H45v-.184c-.087-1.469-2.188-1.232-2 .232-3.072.6-2.688 5.103.466 5.157.54.05 1.644-.25 1.67.603 0 .332-.27.602-.602.602h-2.67a1 1 0 1 0 0 2H43c-.138 1.574 2.185 1.554 2-.048 3.072-.6 2.688-5.103-.466-5.157h-1.068c-.787-.003-.788-1.201 0-1.205z" fill="currentColor" opacity="1" data-original="currentColor"></path>
-                                </g>
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Total Invest</p>
-                            <h5 class="count">{{ currency() }}0.00 </h5>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- 
-                <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ticket">
-                                <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
-                                <path d="M13 5v2" />
-                                <path d="M13 17v2" />
-                                <path d="M13 11v2" />
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Total Ticket </p>
-                            <h5 class="count">{{Auth::user()->total_tickets}}
-                            </h5>
-                        </div>
-                    </div>
-                </div> -->
+								</div>
+								<div class="col-md-12">
+									<div class="card radius-15 card radius-10 ">
+										<div class="card-body text-center">
+											<div class="p-4 radius-15">
+												<img src="https://ui-avatars.com/api/?name={{ Auth::user()->name }}" width="150" height="150" class="rounded-circle shadow p-1  tryal-gradient" alt="">
+												<h5 class="mb-0 mt-5 text-white fs-20 font-w700">{{ Auth::user()->name }}</h5>
+												<p class="mb-3 text-white mx-text">{{ Auth::user()->username }}</p>
+												<div class="list-inline contacts-social mt-3 mb-3">
 
 
-                <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader">
-                                <path d="M12 2v4" />
-                                <path d="m16.2 7.8 2.9-2.9" />
-                                <path d="M18 12h4" />
-                                <path d="m16.2 16.2 2.9 2.9" />
-                                <path d="M12 18v4" />
-                                <path d="m4.9 19.1 2.9-2.9" />
-                                <path d="M2 12h4" />
-                                <path d="m4.9 4.9 2.9 2.9" />
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Refferal Income</p>
-                            <h5 class="count">{{ currency() }}
-                                {{ number_format(Auth::user()->refer_bonus->sum('comm'), 2) }}
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <!--                 
-                <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="24" height="24" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                                <g>
-                                    <g fill="currentColor">
-                                        <path
-                                            d="M18 7h.75a.75.75 0 0 0-.75-.75zm0 4h-.75zM6 7v-.75a.75.75 0 0 0-.75.75zm11.25 0v4h1.5V7zm0 4v8h1.5v-8zM16 20.25H8v1.5h8zM6.75 19V7h-1.5v12zM6 7.75h12v-1.5H6zm0-4h12v-1.5H6zM2.75 7A3.25 3.25 0 0 1 6 3.75v-1.5A4.75 4.75 0 0 0 1.25 7zM6 10.25A3.25 3.25 0 0 1 2.75 7h-1.5A4.75 4.75 0 0 0 6 11.75zM21.25 7A3.25 3.25 0 0 1 18 10.25v1.5A4.75 4.75 0 0 0 22.75 7zm1.5 0A4.75 4.75 0 0 0 18 2.25v1.5A3.25 3.25 0 0 1 21.25 7zm-5.5 12c0 .69-.56 1.25-1.25 1.25v1.5A2.75 2.75 0 0 0 18.75 19zM8 20.25c-.69 0-1.25-.56-1.25-1.25h-1.5A2.75 2.75 0 0 0 8 21.75zM13.47 13.116a.75.75 0 1 0 1.06-1.06zm-.763-1.823-.53.53zm-1.414 0 .53.53zm-1.823.763a.75.75 0 1 0 1.06 1.06zm1.78 4.53a.75.75 0 0 0 1.5 0zm1.5-5a.75.75 0 0 0-1.5 0zm1.78.47-1.293-1.293-1.06 1.06 1.293 1.293zm-3.767-1.293L9.47 12.055l1.06 1.061 1.293-1.293zm2.474 0a1.75 1.75 0 0 0-2.474 0l1.06 1.06a.25.25 0 0 1 .354 0zm-.487 5.823v-5h-1.5v5z"
-                                            fill="currentColor" opacity="1" data-original="#000000" class=""></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Total Deposits</p>
-                            <h5 class="count">{{ currency() }} {{ Auth::user()->investments->sum('amount') }}  </h5>
-                        </div>
-                    </div>
-                </div> -->
+													<p>DOJ : {{ Auth::user()->created_at->format('d-m-Y H:i:s') }}
+														<!-- <br>DOA : 2024-07-06 15:53:43 -->
+													</p>
 
+												</div>
+												<div class="d-grid"> <a href="#" class="btn btn-white radius-15">Rank : </a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="col-xl-12">
+									<div class="card">
+										<div class="card-header border-0 flex-wrap">
+											<h4 class="fs-20 font-w700 mb-2">Project Statistics</h4>
+											<div class="d-flex align-items-center project-tab mb-2">
+												<div class="card-tabs mt-3 mt-sm-0 mb-3 ">
+													<ul class="nav nav-tabs" role="tablist">
+														<li class="nav-item">
+															<a class="nav-link active" data-bs-toggle="tab" href="#monthly" role="tab">Monthly</a>
+														</li>
+														<li class="nav-item">
+															<a class="nav-link" data-bs-toggle="tab" href="#Weekly" role="tab">Weekly</a>
+														</li>
+														<li class="nav-item">
+															<a class="nav-link" data-bs-toggle="tab" href="#Today" role="tab">Today</a>
+														</li>
+													</ul>
+												</div>
+												<div class="dropdown ms-2">
+													<div class="btn-link" data-bs-toggle="dropdown">
+														<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+															<circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+															<circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+														</svg>
+													</div>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a class="dropdown-item" href="javascript:void(0)">Delete</a>
+														<a class="dropdown-item" href="javascript:void(0)">Edit</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="d-flex justify-content-between align-items-center flex-wrap">
+												<div class="d-flex">
+													<div class="d-inline-block position-relative donut-chart-sale mb-3">
+														<span class="donut1" data-peity='{ "fill": ["rgba(136,108,192,1)", "rgba(241, 234, 255, 1)"],   "innerRadius": 20, "radius": 15}'>5/8</span>
+													</div>
+													<div class="ms-3">
+														<h4 class="fs-24 font-w700 ">246</h4>
+														<span class="fs-16 font-w400 d-block">Total Projects</span>
+													</div>
+												</div>
+												<div class="d-flex">
+													<div class="d-flex me-5">
+														<div class="mt-2">
+															<svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<circle cx="6.5" cy="6.5" r="6.5" fill="#FFCF6D"></circle>
+															</svg>
+														</div>
+														<div class="ms-3">
+															<h4 class="fs-24 font-w700 ">246</h4>
+															<span class="fs-16 font-w400 d-block">On Going</span>
+														</div>
+													</div>
+													<div class="d-flex">
+														<div class="mt-2">
+															<svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<circle cx="6.5" cy="6.5" r="6.5" fill="#FFA7D7"></circle>
+															</svg>
 
+														</div>
+														<div class="ms-3">
+															<h4 class="fs-24 font-w700 ">28</h4>
+															<span class="fs-16 font-w400 d-block">Unfinished</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab-content">
+												<div class="tab-pane fade active show" id="monthly">
+													<div id="chartBar" class="chartBar"></div>
+												</div>
+												<div class="tab-pane fade" id="Weekly">
+													<div id="chartBar1" class="chartBar"></div>
+												</div>
+												<div class="tab-pane fade" id="Today">
+													<div id="chartBar2" class="chartBar"></div>
+												</div>
+											</div>
+											<div class="d-flex align-items-center">
+												<label class="form-check-label font-w400 fs-16 mb-0" for="flexSwitchCheckChecked1">Number</label>
+												<div class="form-check form-switch toggle-switch">
+													<input class="form-check-input custome" type="checkbox" id="flexSwitchCheckChecked1" checked="">
 
-                <!-- <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-dashed">
-                                <path d="M10.1 2.182a10 10 0 0 1 3.8 0" />
-                                <path d="M13.9 21.818a10 10 0 0 1-3.8 0" />
-                                <path d="M17.609 3.721a10 10 0 0 1 2.69 2.7" />
-                                <path d="M2.182 13.9a10 10 0 0 1 0-3.8" />
-                                <path d="M20.279 17.609a10 10 0 0 1-2.7 2.69" />
-                                <path d="M21.818 10.1a10 10 0 0 1 0 3.8" />
-                                <path d="M3.721 6.391a10 10 0 0 1 2.7-2.69" />
-                                <path d="M6.391 20.279a10 10 0 0 1-2.69-2.7" />
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Pending Withdrawals</p>
-                            <h5 class="count"> </h5>
-                        </div>
-                    </div>
-                </div> -->
+												</div>
+												<label class="form-check-label font-w400 fs-16 mb-0 ms-3" for="flexSwitchCheckChecked2">Analytics</label>
+												<div class="form-check form-switch toggle-switch">
+													<input class="form-check-input custome" type="checkbox" id="flexSwitchCheckChecked2" checked="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> -->
+								<div class="col-xl-12 col-lg-12">
+									<div class="card">
+										<table class="table table-hover">
+											<thead>
+												<tr>
+													<th>Income</th>
+													<th class="text-right">Daily</th>
+													<th class="text-right">Totals</th>
+												</tr>
+											</thead>
+											<tbody>
 
-
-                <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet-cards">
-                                <rect width="18" height="18" x="3" y="3" rx="2" />
-                                <path d="M3 9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2" />
-                                <path d="M3 11h3c.8 0 1.6.3 2.1.9l1.1.9c1.6 1.6 4.1 1.6 5.7 0l1.1-.9c.5-.5 1.3-.9 2.1-.9H21" />
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Farming Income </p>
-                            <h5 class="count">{{ currency() }} {{ number_format(Auth::user()->level_bonus->sum('comm'), 2) }}
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2m-1-1h5m-5 0a2 2 0 1 1 0-4m5 4v-4" />
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Recurring Income</p>
-                            <h5 class="count">{{ currency() }} {{ number_format(Auth::user()->dailyIncentive->sum('comm'), 2) }} </h5>
-                        </div>
-                    </div>
-                </div>
-
-
-
- <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2m-1-1h5m-5 0a2 2 0 1 1 0-4m5 4v-4" />
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Salary Income</p>
-                            <h5 class="count">{{ currency() }} {{ number_format(Auth::user()->salaryBonus->sum('comm'), 2) }} </h5>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2m-1-1h5m-5 0a2 2 0 1 1 0-4m5 4v-4" />
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Contract Profit Sharing</p>
-                            <h5 class="count">{{ currency() }} {{ number_format(Auth::user()->contractpBonus->sum('comm'), 2) }} </h5>
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2m-1-1h5m-5 0a2 2 0 1 1 0-4m5 4v-4" />
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Same Rank Profit Sharing</p>
-                            <h5 class="count">{{ currency() }} {{ number_format(Auth::user()->samerankBonus->sum('comm'), 2) }} </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v18h18M3 16l5-5 4 4 6-6 3 3" />
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Direct Team </p>
-                            <h5 class="count">{{ $user_direct }}</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2m-1-1h5m-5 0a2 2 0 1 1 0-4m5 4v-4" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 20l3 3 5-5" />
-                            </svg>
-
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Level Team </p>
-                            <h5 class="count">{{$totalTeam}} </h5>
-                        </div>
-                    </div>
-                </div>
-                
-                 <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2m-1-1h5m-5 0a2 2 0 1 1 0-4m5 4v-4" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 20l3 3 5-5" />
-                            </svg>
-
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Team
-                                             Business</p>
-                            <h5 class="count">{{ currency() }} {{number_format($team_business,2)}}  </h5>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-sm-6 col-md-4 col-xxl-3">
-                    <div class="widget-card">
-                        <span class="widget-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="24" height="24" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-                                <g>
-                                    <g fill="currentColor">
-                                        <path
-                                            d="M18 7h.75a.75.75 0 0 0-.75-.75zm0 4h-.75zM6 7v-.75a.75.75 0 0 0-.75.75zm11.25 0v4h1.5V7zm0 4v8h1.5v-8zM16 20.25H8v1.5h8zM6.75 19V7h-1.5v12zM6 7.75h12v-1.5H6zm0-4h12v-1.5H6zM2.75 7A3.25 3.25 0 0 1 6 3.75v-1.5A4.75 4.75 0 0 0 1.25 7zM6 10.25A3.25 3.25 0 0 1 2.75 7h-1.5A4.75 4.75 0 0 0 6 11.75zM21.25 7A3.25 3.25 0 0 1 18 10.25v1.5A4.75 4.75 0 0 0 22.75 7zm1.5 0A4.75 4.75 0 0 0 18 2.25v1.5A3.25 3.25 0 0 1 21.25 7zm-5.5 12c0 .69-.56 1.25-1.25 1.25v1.5A2.75 2.75 0 0 0 18.75 19zM8 20.25c-.69 0-1.25-.56-1.25-1.25h-1.5A2.75 2.75 0 0 0 8 21.75zM14.53 15.53a.75.75 0 1 0-1.06-1.06zm-3.237.763.53-.53zm-.763-1.823a.75.75 0 1 0-1.06 1.06zM12.75 11a.75.75 0 0 0-1.5 0zm-1.5 5a.75.75 0 0 0 1.5 0zm2.22-1.53-1.293 1.293 1.06 1.06 1.293-1.293zm-1.647 1.293L10.53 14.47l-1.06 1.06 1.293 1.293zm.354 0a.25.25 0 0 1-.354 0l-1.06 1.06a1.75 1.75 0 0 0 2.474 0zM11.25 11v5h1.5v-5z"
-                                            fill="currentColor" opacity="1" data-original="#000000" class=""></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </span>
-                        <div class="widget-card__content">
-                            <p class="title">Total Withdraw</p>
-                            <h5 class="count"> {{ currency() }}
-                                {{ number_format(Auth::user()->withdraw(), 2) }}
-                            </h5>
-                        </div>
-                        
-                        
-                        
-                         
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        
-                
-                                @php
-    $user = Auth::user();
-@endphp
-@if($user->event == 1)
-        <div class="card custom--card mb-4">
-            <div class="card-body">
-                <div class="col-md-12 mb-4">
-                    <label class="form--label">Referral Link</label>
-                    <div class="input-group style-left">
-                        <input type="text" name="text"
-                            class="form-control form--control md-style referralURL"
-                            value="{{ url('/register') }}?ref={{ auth()->user()->username }}"
-                            readonly>
-                        <button class="input-group-text copytext copyBoard" id="copyBoard"> <i
-                                class="fa fa-copy"></i> </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
- @endif
-</div>
-</div>
-
-
-
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Dear   {{ Auth::user()->name }},</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Welcome to EcoVillage! We’re delighted to have you join our growing community committed to sustainable living and chemical-free farming.</p></br>
-        
-        <p>Your decision to be a part of EcoVillage reflects a powerful commitment to organic agriculture, environmental wellness, and the empowerment of local farming communities. Together, we are cultivating a future that thrives on harmony with nature and responsible land stewardship.</p></br>
-        
-        <p>At EcoVillage, we’re dedicated to providing outstanding support to ensure your journey with us is smooth, rewarding, and inspiring. If you have any questions, feedback, or need assistance at any point, please feel free to call us at +91 7508640347 or email us at info@ecovillages.co.in. Our team is always here to help.</p></br>
-        <p>Thank you once again for being part of this movement. With your support, we’re one step closer to creating a truly sustainable and thriving future.</p></br>
-        
-        <p>Warm regards,</p></br><p>EcoVillage</p>
-      </div>
-      <div class="modal-footer">
-             <button type="button" class="btn-moderns" data-dismiss="modal">Close</button>
-             
-             <form action="{{ route('user.event') }}" method="POST">
-    @csrf
-        <button   type="submit" class="btn-modern">Confirm</button>
-        </form>
-        
-      <style>
-    .btn-modern {
-        background: linear-gradient(135deg, #4e54c8, #8f94fb);
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-weight: 600;
-        border-radius: 8px;
-        box-shadow: 0 4px 14px rgba(78, 84, 200, 0.4);
-        transition: all 0.3s ease;
-    }
-
-    .btn-modern:hover {
-        background: green;
-        box-shadow: 0 6px 20px rgba(78, 84, 200, 0.6);
-        transform: translateY(-2px);
-    }
-
-    .btn-modern:active {
-        transform: scale(0.98);
-    }
-</style>
-
-
-
-   <style>
-    .btn-moderns {
-        background: red;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-weight: 600;
-        border-radius: 8px;
-        box-shadow: 0 4px 14px rgba(78, 84, 200, 0.4);
-        transition: all 0.3s ease;
-    }
-
-    .btn-moderns:hover {
-        background: red;
-        box-shadow: 0 6px 20px rgba(78, 84, 200, 0.6);
-        transform: translateY(-2px);
-    }
-
-    .btn-moderns:active {
-        transform: scale(0.98);
-    }
-</style>
-
-
-      </div>
-    </div>
-  </div>
-</div>
+												<tr>
+													<td scope="row"><img src="https://ui-avatars.com/api/?name=DI" class="rounded-circle mr-2" width="30" alt=""> <a href="javascript:;">Farming Profit</a></td>
+													<td class="text-right">₹0.00</td>
+													<td class="text-right" id="col1">{{currency()}}{{ number_format(Auth::user()->level_bonus->sum('comm'), 2) }}</td>
+												</tr>
 
 
 
@@ -496,4 +248,743 @@
 
 
 
+												<tr>
+													<td scope="row"><img src="https://ui-avatars.com/api/?name=SI" class="rounded-circle mr-2" width="30" alt=""> <a href="javascript:;">Direct Income</a></td>
+													<td class="text-right">₹0.00</td>
+													<td class="text-right" id="col2">{{ currency() }}
+														{{ number_format(Auth::user()->refer_bonus->sum('comm'), 2) }}
+													</td>
+												</tr>
 
+
+
+
+
+
+
+												<!-- <tr>
+													<td scope="row"><img src="https://ui-avatars.com/api/?name=PI" class="rounded-circle mr-2" width="30" alt=""> <a href="javascript:;">Level Income</a></td>
+													<td class="text-right">₹0.00</td>
+													<td class="text-right">₹113660.9308</td>
+												</tr> -->
+
+
+												<tr>
+													<td scope="row"><img src="https://ui-avatars.com/api/?name=RC" class="rounded-circle mr-2" width="30" alt=""> <a href="javascript:;">Rank Income</a></td>
+													<td class="text-right">₹0.00</td>
+													<td class="text-right" id="col3">{{ currency() }} {{ number_format(Auth::user()->samerankBonus->sum('comm'), 2) }} </td>
+												</tr>
+
+												<tr>
+													<td scope="row"><img src="https://ui-avatars.com/api/?name=RD" class="rounded-circle mr-2" width="30" alt=""> <a href="javascript:;">Contract Profit</a></td>
+													<td class="text-right">₹0.00</td>
+													<td class="text-right" id="col4">{{ currency() }} {{ number_format(Auth::user()->contractpBonus->sum('comm'), 2) }}</td>
+												</tr>
+
+
+												<tr>
+													<td scope="row"><img src="https://ui-avatars.com/api/?name=RI" class="rounded-circle mr-2" width="30" alt=""> <a href="javascript:;">Reward Income</a></td>
+													<td class="text-right">₹0.00</td>
+													<td class="text-right" id="col5">{{ currency() }} {{ number_format(Auth::user()->dailyIncentive->sum('comm'), 2) }}</td>
+												</tr>
+
+												<tr>
+													<td scope="row"><img src="https://ui-avatars.com/api/?name=SI" class="rounded-circle mr-2" width="30" alt=""> <a href="javascript:;">Salary Income</a></td>
+													<td class="text-right">₹0.00</td>
+													<td class="text-right" id="col6">{{ currency() }} {{ number_format(Auth::user()->salaryBonus->sum('comm'), 2) }}</td>
+												</tr>
+
+												<tr>
+													<td scope="row"><img src="https://ui-avatars.com/api/?name=TOTAL" class="rounded-circle mr-2" width="30" alt=""> <a href="javascript:;" style="font-weight:bold;font-size:19px;">Total</a></td>
+													<td class="text-right" style="color:#1e9f07;font-weight:bold;font-size:21px;">₹0</td>
+													<td class="text-right"  style="font-weight:bold;font-size:19px;">{{currency() }}{{ number_format(Auth::user()->getTotalBonus(), 2) }}</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+
+
+								<!-- <div class="col-xl-12">
+									<div class="card">
+										<div class="card-header border-0 pb-0">
+											<h4 class="fs-20 font-w700 mb-0">Completion Project Rate</h4>
+											<div class="dropdown ">
+												<div class="btn-link" data-bs-toggle="dropdown">
+													<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+														<circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+													</svg>
+												</div>
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="javascript:void(0)">Delete</a>
+													<a class="dropdown-item" href="javascript:void(0)">Edit</a>
+												</div>
+											</div>
+										</div>
+										<div class="card-body pb-0">
+											<div id="revenueMap" class="revenueMap"></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-12">
+									<div class="card">
+										<div class="card-header border-0">
+											<div>
+												<h4 class="fs-20 font-w700">Recent Emails</h4>
+												<span class="fs-14 font-w400">Lorem ipsum dolor sit amet</span>
+											</div>
+											<div>
+												<a href="javascript:void(0);" class="btn btn-outline-primary btn-rounded fs-18">View More</a>
+											</div>
+										</div>
+										<div class="card-body px-0">
+											<div class="d-flex justify-content-between recent-emails">
+												<div class="d-flex">
+													<div class="profile-k">
+														<span class="bg-success">K</span>
+													</div>
+													<div class="ms-3">
+														<h4 class="fs-18 font-w500">How to improve project management flows</h4>
+														<span class="font-w400 d-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua...</span>
+													</div>
+												</div>
+												<div class="email-check">
+													<label class="like-btn mb-0">
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between recent-emails">
+												<div class="d-flex">
+													<div class="profile-k">
+														<img src="images/profile/small/pic6.jpg" alt="">
+													</div>
+													<div class="ms-3">
+														<h4 class="fs-18 font-w500">Fillow Final UseCase Diagram</h4>
+														<span class="font-w400 d-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua...</span>
+														<div class="final-badge">
+															<span class="badge text-black border"><i class="far fa-file-alt me-3"></i>Master_file.fig</span>
+															<span class="badge text-black border"><i class="fas fa-image me-2"></i>CoverPreview.jpg</span>
+															<span class="badge border bgl-primary font-w700">4 files more</span>
+														</div>
+													</div>
+												</div>
+												<div class="email-check">
+													<label class="like-btn mb-0">
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between recent-emails">
+												<div class="d-flex">
+													<div class="profile-k">
+														<span class="bg-warning">G</span>
+													</div>
+													<div class="ms-3">
+														<h4 class="fs-18 font-w500">Weekly Design Inspirations by Envato</h4>
+														<span class="font-w400 d-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua...</span>
+													</div>
+												</div>
+												<div class="email-check">
+													<label class="like-btn mb-0">
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+											<div class="d-flex justify-content-between recent-emails">
+												<div class="d-flex">
+													<div class="profile-k">
+														<img src="images/profile/small/pic8.jpg" alt="">
+													</div>
+													<div class="ms-3">
+														<h4 class="fs-18 font-w500">How to improve project management flows</h4>
+														<span class="font-w400 d-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua...</span>
+													</div>
+												</div>
+												<div class="email-check">
+													<label class="like-btn mb-0">
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> -->
+							</div>
+
+						</div>
+						<div class="col-xl-6">
+							<div class="row">
+								<div class="col-xl-12">
+									<div class="row">
+
+
+										<div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body px-4 pb-0">
+													<div>
+														<h4 class="fs-18 font-w600 mb-4 text-nowrap">Available Balance</h4>
+														<div class="d-flex align-items-center">
+															<h2 class="fs-32 font-w700 mb-2">{{ currency() }}{{ number_format(Auth::user()->available_balance(), 2) }}</h2>
+
+														</div>
+													</div>
+													<div class="progress default-progress">
+
+
+														<div class="progress-bar bg-gradient1 progress-animated" style="width: 40%; height:10px;" role="progressbar">
+															<span class="sr-only">45% Complete</span>
+														</div>
+													</div>
+													<div class="d-flex align-items-end mt-2 pb-3 justify-content-between">
+														<span>76 left from target</span>
+														<h4 class="mb-0">42</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body px-4 pb-0">
+													<div>
+														<h4 class="fs-18 font-w600 mb-4 text-nowrap">Total Deposit</h4>
+														<div class="d-flex align-items-center">
+															<h2 class="fs-32 font-w700 mb-2">{{ currency() }} {{ Auth::user()->investments->sum('amount') }} </h2>
+
+														</div>
+													</div>
+													<div class="progress default-progress">
+
+
+														<div class="progress-bar bg-gradient1 progress-animated" style="width: 40%; height:10px;" role="progressbar">
+															<span class="sr-only">45% Complete</span>
+														</div>
+													</div>
+													<div class="d-flex align-items-end mt-2 pb-3 justify-content-between">
+														<span>76 left from target</span>
+														<h4 class="mb-0">42</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body px-4 pb-0">
+													<div>
+														<h4 class="fs-18 font-w600 mb-4 text-nowrap">Top Up Balance</h4>
+														<div class="d-flex align-items-center">
+															<h2 class="fs-32 font-w700 mb-2">{{ currency() }} {{ number_format(Auth::user()->FundBalance(), 2) }}</h2>
+
+														</div>
+													</div>
+													<div class="progress default-progress">
+
+
+														<div class="progress-bar bg-gradient1 progress-animated" style="width: 40%; height:10px;" role="progressbar">
+															<span class="sr-only">45% Complete</span>
+														</div>
+													</div>
+													<div class="d-flex align-items-end mt-2 pb-3 justify-content-between">
+														<span>76 left from target</span>
+														<h4 class="mb-0">42</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body px-4 pb-0">
+													<div>
+														<h4 class="fs-18 font-w600 mb-4 text-nowrap">Refferal Income</h4>
+														<div class="d-flex align-items-center">
+															<h2 class="fs-32 font-w700 mb-2">{{ currency() }}
+																{{ number_format(Auth::user()->refer_bonus->sum('comm'), 2) }}
+															</h2>
+
+														</div>
+													</div>
+													<div class="progress default-progress">
+
+
+														<div class="progress-bar bg-gradient1 progress-animated" style="width: 60%; height:10px;" role="progressbar">
+															<span class="sr-only">45% Complete</span>
+														</div>
+													</div>
+													<div class="d-flex align-items-end mt-2 pb-3 justify-content-between">
+														<span>76 left from target</span>
+														<h4 class="mb-0">42</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+
+									</div>
+
+								</div>
+								<div class="col-xl-12">
+									<div class="row">
+
+
+										<div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body px-4 pb-0">
+													<div>
+														<h4 class="fs-18 font-w600 mb-4 text-nowrap">Farming Income</h4>
+														<div class="d-flex align-items-center">
+															<h2 class="fs-32 font-w700 mb-2">{{ currency() }} {{ number_format(Auth::user()->level_bonus->sum('comm'), 2) }}</h2>
+
+														</div>
+													</div>
+													<div class="progress default-progress">
+
+
+														<div class="progress-bar bg-gradient1 progress-animated" style="width: 60%; height:10px;" role="progressbar">
+															<span class="sr-only">45% Complete</span>
+														</div>
+													</div>
+													<div class="d-flex align-items-end mt-2 pb-3 justify-content-between">
+														<span>76 left from target</span>
+														<h4 class="mb-0">42</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body px-4 pb-0">
+													<div>
+														<h4 class="fs-18 font-w600 mb-4 text-nowrap">Reccuring Income</h4>
+														<div class="d-flex align-items-center">
+															<h2 class="fs-32 font-w700 mb-2">{{ currency() }} {{ number_format(Auth::user()->dailyIncentive->sum('comm'), 2) }} </h2>
+
+														</div>
+													</div>
+													<div class="progress default-progress">
+
+
+														<div class="progress-bar bg-gradient1 progress-animated" style="width: 60%; height:10px;" role="progressbar">
+															<span class="sr-only">45% Complete</span>
+														</div>
+													</div>
+													<div class="d-flex align-items-end mt-2 pb-3 justify-content-between">
+														<span>76 left from target</span>
+														<h4 class="mb-0">42</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+										<!-- <div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body d-flex px-4  justify-content-between">
+													<div>
+														<div class="">
+															<h2 class="fs-32 font-w700">892</h2>
+															<span class="fs-18 font-w500 d-block">New Projects</span>
+															<span class="d-block fs-16 font-w400"><small class="text-success">-2%</small> than last month</span>
+														</div>
+													</div>
+													<div id="NewCustomers" style="min-height: 50px;">
+														<div id="apexcharts81txw3pt" class="apexcharts-canvas apexcharts81txw3pt apexcharts-theme-light" style="width: 100px; height: 50px;"><svg id="SvgjsSvg2532" width="100" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;">
+																<g id="SvgjsG2534" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 0)">
+																	<defs id="SvgjsDefs2533">
+																		<clipPath id="gridRectMask81txw3pt">
+																			<rect id="SvgjsRect2537" width="110" height="56" x="-5" y="-3" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect>
+																		</clipPath>
+																		<clipPath id="gridRectMarkerMask81txw3pt">
+																			<rect id="SvgjsRect2538" width="104" height="54" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect>
+																		</clipPath>
+																	</defs>
+																	<g id="SvgjsG2544" class="apexcharts-xaxis" transform="translate(0, 0)">
+																		<g id="SvgjsG2545" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"></g>
+																	</g>
+																	<g id="SvgjsG2553" class="apexcharts-grid">
+																		<g id="SvgjsG2554" class="apexcharts-gridlines-horizontal" style="display: none;">
+																			<line id="SvgjsLine2556" x1="0" y1="0" x2="100" y2="0" stroke="#eeeeee" stroke-dasharray="0" class="apexcharts-gridline"></line>
+																			<line id="SvgjsLine2557" x1="0" y1="10" x2="100" y2="10" stroke="#eeeeee" stroke-dasharray="0" class="apexcharts-gridline"></line>
+																			<line id="SvgjsLine2558" x1="0" y1="20" x2="100" y2="20" stroke="#eeeeee" stroke-dasharray="0" class="apexcharts-gridline"></line>
+																			<line id="SvgjsLine2559" x1="0" y1="30" x2="100" y2="30" stroke="#eeeeee" stroke-dasharray="0" class="apexcharts-gridline"></line>
+																			<line id="SvgjsLine2560" x1="0" y1="40" x2="100" y2="40" stroke="#eeeeee" stroke-dasharray="0" class="apexcharts-gridline"></line>
+																			<line id="SvgjsLine2561" x1="0" y1="50" x2="100" y2="50" stroke="#eeeeee" stroke-dasharray="0" class="apexcharts-gridline"></line>
+																		</g>
+																		<g id="SvgjsG2555" class="apexcharts-gridlines-vertical" style="display: none;"></g>
+																		<line id="SvgjsLine2563" x1="0" y1="50" x2="100" y2="50" stroke="transparent" stroke-dasharray="0"></line>
+																		<line id="SvgjsLine2562" x1="0" y1="1" x2="0" y2="50" stroke="transparent" stroke-dasharray="0"></line>
+																	</g>
+																	<g id="SvgjsG2539" class="apexcharts-line-series apexcharts-plot-series">
+																		<g id="SvgjsG2540" class="apexcharts-series" seriesName="NetxProfit" data:longestSeries="true" rel="1" data:realIndex="0">
+																			<path id="SvgjsPath2543" d="M 0 47.5C 7 47.5 13 22.5 20 22.5C 27 22.5 33 47.5 40 47.5C 47 47.5 53 10 60 10C 67 10 73 35 80 35C 87 35 93 10 100 10" fill="none" fill-opacity="1" stroke="var(--primary)" stroke-opacity="1" stroke-linecap="butt" stroke-width="6" stroke-dasharray="0" class="apexcharts-line" index="0" clip-path="url(#gridRectMask81txw3pt)" pathTo="M 0 47.5C 7 47.5 13 22.5 20 22.5C 27 22.5 33 47.5 40 47.5C 47 47.5 53 10 60 10C 67 10 73 35 80 35C 87 35 93 10 100 10" pathFrom="M -1 60L -1 60L 20 60L 40 60L 60 60L 80 60L 100 60"></path>
+																			<g id="SvgjsG2541" class="apexcharts-series-markers-wrap" data:realIndex="0"></g>
+																		</g>
+																		<g id="SvgjsG2542" class="apexcharts-datalabels" data:realIndex="0"></g>
+																	</g>
+																	<line id="SvgjsLine2564" x1="0" y1="0" x2="100" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line>
+																	<line id="SvgjsLine2565" x1="0" y1="0" x2="100" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line>
+																	<g id="SvgjsG2566" class="apexcharts-yaxis-annotations"></g>
+																	<g id="SvgjsG2567" class="apexcharts-xaxis-annotations"></g>
+																	<g id="SvgjsG2568" class="apexcharts-point-annotations"></g>
+																</g>
+																<g id="SvgjsG2552" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g>
+																<g id="SvgjsG2535" class="apexcharts-annotations"></g>
+															</svg>
+															<div class="apexcharts-legend" style="max-height: 25px;"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div> -->
+										<!-- <div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body d-flex px-4  justify-content-between">
+													<div>
+														<div class="">
+															<h2 class="fs-32 font-w700">562</h2>
+															<span class="fs-18 font-w500 d-block">Total Clients</span>
+															<span class="d-block fs-16 font-w400"><small class="text-danger">-2%</small> than last month</span>
+														</div>
+													</div>
+													<div id="NewCustomers"></div>
+												</div>
+											</div>
+										</div> -->
+									</div>
+
+								</div>
+								<div class="col-xl-12">
+									<div class="row">
+
+
+										<div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body px-4 pb-0">
+													<div>
+														<h4 class="fs-18 font-w600 mb-4 text-nowrap">Direct Team</h4>
+														<div class="d-flex align-items-center">
+															<h2 class="fs-32 font-w700 mb-2">{{ $user_direct }}</h2>
+
+														</div>
+													</div>
+													<div class="progress default-progress">
+
+
+														<div class="progress-bar bg-gradient1 progress-animated" style="width: 60%; height:10px;" role="progressbar">
+															<span class="sr-only">45% Complete</span>
+														</div>
+													</div>
+													<div class="d-flex align-items-end mt-2 pb-3 justify-content-between">
+														<span>76 left from target</span>
+														<h4 class="mb-0">42</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-6 col-sm-6">
+											<div class="card">
+												<div class="card-body px-4 pb-0">
+													<div>
+														<h4 class="fs-18 font-w600 mb-4 text-nowrap">Level Team</h4>
+														<div class="d-flex align-items-center">
+															<h2 class="fs-32 font-w700 mb-2">{{$totalTeam}} </h2>
+
+														</div>
+													</div>
+													<div class="progress default-progress">
+
+
+														<div class="progress-bar bg-gradient1 progress-animated" style="width: 60%; height:10px;" role="progressbar">
+															<span class="sr-only">45% Complete</span>
+														</div>
+													</div>
+													<div class="d-flex align-items-end mt-2 pb-3 justify-content-between">
+														<span>76 left from target</span>
+														<h4 class="mb-0">42</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class=" col-xl-12 col-lg-12">
+									<div class="card radius-10 tryal-gradien">
+										<div class="card-body">
+											<label class="form--label">Referral Link</label>
+											<div class="input-group style-left" id="myLink">
+												<input type="text" name="text"
+													class="form-control form--control md-style referralURL"
+													value="{{ url('/register') }}?ref={{ auth()->user()->username }}"
+													readonly>
+												<button class="input-group-text copytext copyBoard" onclick="copyLink()"> <i
+														class="fa fa-copy"></i> </button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="col-xl-12 col-lg-12">
+									<div class="card">
+										<div class="card-header border-0">
+											<div>
+												<h4 class="fs-20 font-w700">Messages</h4>
+												<span>Lorem ipsum dolor sit amet</span>
+											</div>
+											<div>
+												<a href="javascript:void(0);" class="btn btn-primary btn-rounded">+New Messages</a>
+											</div>
+										</div>
+										<div class="card-body px-0">
+											<div class="msg-bx d-flex justify-content-between align-items-center">
+												<div class="msg d-flex align-items-center w-100">
+													<div class="image-box">
+														<img src="{{asset('')}}users/images/profile/small/pic6.jpg" alt="">
+													</div>
+													<div class="ms-3 w-100 ">
+														<h4 class="fs-18 font-w600">Maren Rosser</h4>
+														<div class="d-flex justify-content-between">
+															<span class="me-auto">Hei, dont forget to clear server cache!</span>
+															<span class="me-4 fs-12">25min ago</span>
+														</div>
+													</div>
+
+												</div>
+												<div class="dropdown">
+													<div class="btn-link" data-bs-toggle="dropdown">
+														<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+															<circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+															<circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+														</svg>
+													</div>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a class="dropdown-item" href="javascript:void(0)">Delete</a>
+														<a class="dropdown-item" href="javascript:void(0)">Edit</a>
+													</div>
+												</div>
+											</div>
+											<div class="msg-bx d-flex justify-content-between align-items-center">
+												<div class="msg d-flex align-items-center w-100">
+													<div class="image-box">
+														<img src="{{asset('')}}users/images/profile/small/pic7.jpg" alt="">
+													</div>
+													<div class="ms-3 w-100">
+														<h4 class="fs-18 font-w600">Kaiya Bergson</h4>
+														<div class="d-flex justify-content-between">
+															<span class="me-auto">I remember that project due is tomorrow.</span>
+															<span class="me-4 fs-12">Yesterday, 8:24 AM</span>
+														</div>
+													</div>
+												</div>
+												<div class="dropdown">
+													<div class="btn-link" data-bs-toggle="dropdown">
+														<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+															<circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+															<circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+														</svg>
+													</div>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a class="dropdown-item" href="javascript:void(0)">Delete</a>
+														<a class="dropdown-item" href="javascript:void(0)">Edit</a>
+													</div>
+												</div>
+											</div>
+											<div class="msg-bx d-flex justify-content-between align-items-center">
+												<div class="msg d-flex align-items-center w-100">
+													<div class="image-box ">
+														<img src="{{asset('')}}users/images/profile/small/pic4.jpg" alt="">
+													</div>
+													<div class="ms-3 w-100">
+														<h4 class="fs-18 font-w600">Ruben Press</h4>
+														<div class="d-flex justify-content-between">
+															<span class="me-auto">Ok sir. I will fix it as soon as possible</span>
+															<span class="me-4 fs-12">December 12th, 2020 10:24 AM</span>
+														</div>
+													</div>
+												</div>
+												<div class="dropdown">
+													<div class="btn-link" data-bs-toggle="dropdown">
+														<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<circle cx="12.4999" cy="3.5" r="2.5" fill="#A5A5A5"></circle>
+															<circle cx="12.4999" cy="11.5" r="2.5" fill="#A5A5A5"></circle>
+															<circle cx="12.4999" cy="19.5" r="2.5" fill="#A5A5A5"></circle>
+														</svg>
+													</div>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a class="dropdown-item" href="javascript:void(0)">Delete</a>
+														<a class="dropdown-item" href="javascript:void(0)">Edit</a>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div> -->
+
+								<div class=" col-xl-12 col-lg-12">
+									<div class="card radius-10 tryal-gradien">
+										<div class="card-body">
+											<div class="d-flex align-items-center">
+												<div>
+													<h6 class="mb-0">Latest News</h6>
+												</div>
+												<div class="font-22 ms-auto"><i class="bx bx-dots-horizontal-rounded"></i>
+												</div>
+											</div>
+											<div class="">
+												<div class="card mb-4">
+
+													<div class="card-body">
+
+														<marquee direction="up" onmouseout="this.start();" onmouseover="this.stop();" style="height:281px;">
+															<center>
+
+
+																<h5>WITHDRAWAL AND KYC</h5>
+																<p>Dear All,
+
+																	As previously notified, completing your Know Your Customer (KYC) process is now mandatory for all withdrawals. If you haven’t already completed your KYC, please do so as soon as possible.
+
+																	We have successfully processed all withdrawal requests, including auto-withdrawals. However, accounts with pending or non-approved KYC status have not received their withdrawals.
+
+																	Thank you for your cooperation.
+																	Team
+																	Generation of farming</p>
+
+
+
+																<h5>GENERATION OF FARMING SUPPORT NO. 83600-91530</h5>
+																<p>97797-17726</p>
+
+
+
+																<h5>INFORMATION ABOUT WITHDRAWAL</h5>
+																<p>DUE TO COMPANY ANNOUNCEMENT GOF MINIMUM WITHDRAWAL PAYOUT AMOUNT IS RS.💷1000💷</p>
+
+
+
+																<h5>IMPORTANT ANNOUNCEMENT</h5>
+																<p>ID capping will be applied from 16 august so kindly topup your ids with proper fund</p>
+
+
+															</center>
+														</marquee>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- 
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="row">
+						<div class="col-xl-6">
+							<div class="card">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-xl-6 col-sm-6">
+											<div class=" ">
+												<div class="items">
+													<h4 class="fs-20 font-w700 mb-4">Boost Status</h4>
+												</div>
+
+											</div>
+										</div>
+										<div class="card-body">
+											<div id="redial"></div>
+											<span class="text-center d-block fs-18 font-w600">Current ROI </span>
+										</div>
+										<div class="msg-bx d-flex justify-content-between align-items-center">
+											<div class="msg d-flex align-items-center w-100">
+
+												<div class="ms-3 w-100">
+													<h4 class="fs-18 font-w600">Total Sponsor</h4>
+													<div class="d-flex justify-content-between">
+														<span class="me-auto">0</span>
+														<span class="me-4 fs-12">Equal & Above of First Pack</span>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	<!--**********************************
+            Content body end
+        ***********************************-->
+
+
+
+
+	<!-- लिंक जिसे कॉपी करना है -->
+	<!-- <a id="myLink" href="https://example.com">https://example.com</a> -->
+
+	<!-- कॉपी के लिए बटन -->
+	<!-- <button onclick="copyLink()">Copy Link</button> -->
+
+	<script>
+		function copyLink() {
+			const inputElement = document.querySelector('input[name="text"]');
+			inputElement.select();
+			document.execCommand('copy');
+			console.log('Link copied to clipboard!');
+		}
+	</script>
+
+	<script>
+		function calculateTotal() {
+			let total = 0;
+			let i = 1;
+
+			while (true) {
+				const el = document.getElementById('col' + i);
+				if (!el) break;
+
+				const val = parseFloat(el.innerText) || 0;
+				console.log
+				total += val;
+				i++;
+			}
+
+			document.getElementById('total').innerText = `Total ${total}`;
+		}
+
+		window.addEventListener('DOMContentLoaded', calculateTotal);
+	</script>

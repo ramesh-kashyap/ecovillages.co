@@ -1,110 +1,226 @@
 @include('layouts.mainsite.header')
 
-
-<!--==================================================-->
-<!-- Start Echofy Breadcumb Area -->
-<!--==================================================-->
-<div class="breadcumb-area">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-12 text-center">
-				<div class="breadcumb-content">
-					<div class="breadcumb-title">
-						<h4>Meet Our Team</h4>
-					</div>
-					<ul>
-						<li><a href="{{route('index')}}"><img src="assets/images/breadcumb-text-shape.png" alt="">Ecovillages</a></li>
-						<li>Our Team</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--==================================================-->
-<!-- End Echofy Breadcumb Area -->
-<!--==================================================-->
-
-
-
-
-<!--==================================================-->
-<!-- Strat Echofy Team Area-->
-<!--==================================================-->
-<div class="team-area inner">
-	<div class="container">
-		<div class="row">
-		   <div class="col-lg-12 text-center">
-				<div class="section-title center">
-					<h4><img src="{{asset('')}}assets/images/section-shape.png" alt="">Our Team</h4>
-					<h1>Meet Our Dedicated Members</h1>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-6">
-				<div class="single-team-box">
-					<div class="single-team-thumb">
-						<img src="assets/images/about-one-img-1.jpg" alt=""style="border-radius: 60%;width: 260px;height: 260px;">
-					</div>
-					<div class="team-content">
-						<h4>Narshi</h4>
-						<p></p>
-						<div class="team-social-icon">
-							<ul>
-								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-								<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>			
-			<div class="col-lg-4 col-md-6">
-				<div class="single-team-box">
-					<div class="single-team-thumb">
-                       <img src="{{asset('')}}assets/images/home1/team2.jpg" alt=""style="border-radius: 60%;width: 260px;height: 260px;">
-
-					</div>
-					<div class="team-content">
-						<h4>Raghav Joshi</h4>
-						<p></p>
-						<div class="team-social-icon">
-							<ul>
-								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-								<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>			
-			<div class="col-lg-4 col-md-6">
-				<div class="single-team-box">
-					<div class="single-team-thumb">
-						<img src="{{asset('')}}assets/images/home1/team3.jpg" alt=""style="border-radius: 60%;width: 260px;height: 260px;">
-					</div>
-					<div class="team-content">
-						<h4>Ram Lal</h4>
-						<p></p>
-						<div class="team-social-icon">
-							<ul>
-								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-								<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--==================================================-->
-<!-- End Echofy Brand Area-->
-<!--==================================================-->
+   <main>
+            
+           <!-- breadcrumb-area -->
+            <section class="breadcrumb-area d-flex  p-relative align-items-center" style="background-image:url(../assets/img/bg/bdrc-bg.jpg)">
+              
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="breadcrumb-wrap text-left">
+                                <div class="breadcrumb-title">
+                                    <h2>Our Team</h2>      
+                                    <div class="breadcrumb-wrap">
+                              
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
+                                       <li class="breadcrumb-item active" aria-current="page">Our Team</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- breadcrumb-area-end -->          
+                 
+            <!-- team-area -->
+            <section class="team-area2 fix p-relative pt-120 pb-80">  
+                  <div class="container">  
+                    <div class="row justify-content-center align-items-center">                   
+                        <div class="col-xl-4 col-md-6">
+                            <div class="single-team mb-40" >
+                                <div class="team-thumb">
+                                    <div class="brd">
+                                         <a href="team-single.html"><img src="{{asset('')}}assets/img/team/team01.jpg" alt="img"></a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="team-info">
+                                    <h4><a href="team-single.html">Howard Holmes</a></h4>
+                                    <p>CEO & Founder</p>
+                                    <div class="team-social">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> 
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li> <a href="#"><i class="fab fa-twitter"></i></a></li>                                                  
+                                        </ul>       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                            <div class="single-team mb-40" >
+                                <div class="team-thumb">
+                                    <div class="brd">
+                                        <a href="team-single.html"><img src="{{asset('')}}assets/img/team/team02.jpg" alt="img"></a>
+                                    </div>                                     
+                                </div>
+                                <div class="team-info">
+                                    <h4><a href="team-single.html">Ella Thompson</a></h4>
+                                    <p>Dcfarm Team</p>
+                                    <div class="team-social">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> 
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li> <a href="#"><i class="fab fa-twitter"></i></a></li>                                                  
+                                        </ul>          
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="col-xl-4 col-md-6">
+                            <div class="single-team mb-40" >
+                                <div class="team-thumb">
+                                    <div class="brd">
+                                        <a href="team-single.html"><img src="{{asset('')}}assets/img/team/team03.jpg" alt="img"></a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="team-info">
+                                    <h4><a href="team-single.html">Vincent Cooper</a></h4>
+                                    <p>Dcfarm Team</p>
+                                    <div class="team-social">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> 
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li> <a href="#"><i class="fab fa-twitter"></i></a></li>                                                  
+                                        </ul>          
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xl-4 col-md-6">
+                            <div class="single-team mb-40" >
+                                <div class="team-thumb">
+                                    <div class="brd">
+                                         <a href="team-single.html"><img src="{{asset('')}}assets/img/team/team04.jpg" alt="img"></a>
+                                    </div>
+                                
+                                </div>
+                                <div class="team-info">
+                                    <h4><a href="team-single.html">Danielle Bryant</a></h4>
+                                    <p>Dcfarm Team</p>
+                                    <div class="team-social">
+                                       <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> 
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li> <a href="#"><i class="fab fa-twitter"></i></a></li>                                                  
+                                        </ul>       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                            <div class="single-team mb-40" >
+                                <div class="team-thumb">
+                                    <div class="brd">
+                                         <a href="team-single.html"><img src="{{asset('')}}assets/img/team/team05.jpg" alt="img"></a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="team-info">
+                                    <h4><a href="team-single.html">Ostin Green</a></h4>
+                                    <p>CEO & Founder</p>
+                                    <div class="team-social">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> 
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li> <a href="#"><i class="fab fa-twitter"></i></a></li>                                                  
+                                        </ul>       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                            <div class="single-team mb-40" >
+                                <div class="team-thumb">
+                                    <div class="brd">
+                                        <a href="team-single.html"><img src="{{asset('')}}assets/img/team/team06.jpg" alt="img"></a>
+                                    </div>                                     
+                                </div>
+                                <div class="team-info">
+                                    <h4><a href="team-single.html">Gerard Peano</a></h4>
+                                    <p>Dcfarm Team</p>
+                                    <div class="team-social">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> 
+                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                            <li> <a href="#"><i class="fab fa-twitter"></i></a></li>                                                  
+                                        </ul>          
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+            <!-- team-area-end --> 
+          <!-- brand-area -->
+            <div class="brand-area pb-120">
+                <div class="container">
+                    <div class="row brand-active">
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                <img src="{{asset('')}}assets/img/brand/b-logo1.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                 <img src="{{asset('')}}assets/img/brand/b-logo2.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                 <img src="{{asset('')}}assets/img/brand/b-logo3.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                  <img src="{{asset('')}}assets/img/brand/b-logo4.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                 <img src="{{asset('')}}assets/img/brand/b-logo5.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                <img src="{{asset('')}}assets/img/brand/b-logo1.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                 <img src="{{asset('')}}assets/img/brand/b-logo2.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                 <img src="{{asset('')}}assets/img/brand/b-logo3.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                  <img src="{{asset('')}}assets/img/brand/b-logo4.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                 <img src="{{asset('')}}assets/img/brand/b-logo5.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- brand-area-end -->        
+         
+        </main>
 
 @include('layouts.mainsite.footer')

@@ -1,308 +1,319 @@
 @include('layouts.mainsite.header')
 
-
-<!--==================================================-->
-<!-- Start Echofy Breadcumb Area -->
-<!--==================================================-->
-<div class="breadcumb-area">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-12 text-center">
-				<div class="breadcumb-content">
-					<div class="breadcumb-title">
-						<h4>Our Services</h4>
-					</div>
-					<ul>
-						<li><a href="{{route('index')}}"><img src="assets/images/breadcumb-text-shape.png" alt="">Ecovillages</a></li>
-						<li>Service</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--==================================================-->
-<!-- End Echofy Breadcumb Area -->
-<!--==================================================-->
-
-
-
-<!--==================================================-->
-<!-- Strat Echofy Service Area Home-two -->
-<!--==================================================-->
-<div class="service-area home-two inner">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<div class="section-title center">
-					<h4><img src="assets/images/home1/section-shape.png" alt="">Our Services</h4>
-					<h1>Echofy Provide Environment</h1>
-					<h1>Best Leading Services</h1>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-		    <div class="col-lg-4 col-md-6">
-         	    <div class="single-service-box">
-         	    	<div class="service-thumb">
-         	    		<img src="assets/images/home1/8b305542-5161-4679-ba7a-79d07ffd662e.jpeg" alt="">
-         	    	</div>
-         	    	<div class="service-content">
-         	    		<div class="services-icon">
-         	    			<img src="assets/images/service-icon-1.png" alt="">
-         	    		</div>
-         	    		<a href="service-details.html"> Poultry Farming(Benefits)</a>
-         	    		
-<p>Poultry farming is the controlled and scientific raising of domesticated birds, primarily chickens, for the purpose of producing eggs and meat. It involves selecting high-yield breeds, proper feeding, health management.	
-Low investment, high returns
-
-Constant demand for eggs and chicken
-
-Organic poultry improves health and safety
-
-Self-employment for rural women
-
-Poultry litter used as bio-fertilizer</p>
-         	    	</div>
-         	    </div>
-           </div>			  
-            <div class="col-lg-4 col-md-6">
-         	    <div class="single-service-box">
-         	    	<div class="service-thumb">
-         	    		<img src="assets/images/home1/vag2.jpg" alt="">
-         	    	</div>
-         	    	<div class="service-content">
-         	    		<div class="services-icon">
-         	    			<img src="assets/images/service-icon-2.png" alt="">
-         	    		</div>
-         	    		<a href="service-details.html">Cow Farming(Benefits)</a>
-         	    		<p>Cow farming includes rearing cows for milk production and other byproducts like dung and urine, which have agricultural and medicinal value.
-Sale of pure milk and dairy products
-
-Production of organic manure (cow dung)
-
-Cow-based organic products like pest repellents
-
-Employment opportunities in rural areas
-
-Useful in natural therapies (Panchagavya)
-
-</br></br>
-						</p>
-
-         	    	</div>
-         	    </div>
-           </div>			   
-            <div class="col-lg-4 col-md-6">
-         	    <div class="single-service-box">
-         	    	<div class="service-thumb">
-         	    		<img src="assets/images/home1/nrd-D6Tu_L3chLE-unsplash.jpg" alt="">
-         	    	</div>
-         	    	<div class="service-content">
-         	    		<div class="services-icon">
-         	    			<img src="assets/images/service-icon-3.png" alt="">
-         	    		</div>
-         	    		<a href="#">Occhid Farms(Benefits)</a>
-         	    		<p>Occhid (Orchid) farming involves cultivating high-value ornamental flowers that are in demand in both domestic and international markets.
-							High income in limited space
-
-Premium price in the flower market
-
-Used in decorations and commercial events
-
-Eco-friendly farming
-
-Long-lasting flowers with export potential
-						</p>
-</br>
-         	    	</div>
-         	    </div>
+    <main>
+            
+           <!-- breadcrumb-area -->
+            <section class="breadcrumb-area d-flex  p-relative align-items-center" style="background-image:url(../assets/img/bg/bdrc-bg.jpg)">
+              
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="breadcrumb-wrap text-left">
+                                <div class="breadcrumb-title">
+                                    <h2>Service</h2>    
+                                    <div class="breadcrumb-wrap">
+                              
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Service</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- breadcrumb-area-end -->
+            <!-- services-five-area -->
+         <section id="services-05" class="services-05 pt-120 pb-100 p-relative fix">
+            <div class="container">
+               <div class="row align-items-center justify-content-center">
+                  <div class="col-lg-4">
+                       <div class="services-box-05 mb-30 hover-zoomin wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
+                           <div class="services-icon-05">
+                               <a href="single-service.html"><img src="{{asset('')}}assets/img/bg/cow.png" alt="icon01"></a>
+                           </div>
+                           <div class="services-content-05">
+                              <div class="icon">
+                                  <h4> <a href="single-service.html">Cow Farming</a> </h4>
+                              </div>
+                              <p>Cow farming includes rearing cows for milk production and other byproducts like dung and urine, which have agricultural and medicinal value.</p>
+                           </div>
+                        </div>
+                   </div>
+                   <div class="col-lg-4">
+                        <div class="services-box-05 mb-30 hover-zoomin wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
+                           <div class="services-icon-05">
+                               <a href="single-service.html"><img src="{{asset('')}}assets/img/bg/fa.jpg" alt="icon01"></a>
+                           </div>
+                           <div class="services-content-05">
+                              <div class="icon">
+                                 <h4><a href="single-service.html">Occhid Farms</a> </h4>
+                              </div>
+                              <p>Occhid (Orchid) farming involves cultivating high-value ornamental flowers that are in demand in both domestic and international markets</p>
+                           </div>
+                        </div>
+                        </div>
+                   <div class="col-lg-4">
+                        <div class="services-box-05 mb-30 hover-zoomin wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
+                           <div class="services-icon-05">
+                               <a href="single-service.html"><img src="{{asset('')}}assets/img/bg/vag1.jpg" alt="icon01"></a>
+                           </div>
+                           <div class="services-content-05">
+                              <div class="icon">
+                                  <h4><a href="single-service.html">Organic Store</a></h4>
+                              </div>
+                              <p>Stores that sell chemical-free fruits, vegetables, grains, and daily essentials grown using organic farming methods.</p>                          
+                           </div>
+                        </div>
+                        </div>
+                   <div class="col-lg-4">
+                       <div class="services-box-05 mb-30 hover-zoomin wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
+                           <div class="services-icon-05">
+                               <a href="single-service.html"><img src="{{asset('')}}assets/img/bg/fis.png" alt="icon01"></a>
+                           </div>
+                           <div class="services-content-05">
+                              <div class="icon">
+                                  <h4><a href="single-service.html">Fish Farming</a> </h4>
+                              </div>
+                              <p>Raising fish such as Rohu, Catla, and Mrigal in ponds or tanks for commercial sale.</p>
+                           </div>
+                        </div>
+                        </div>
+                  <div class="col-lg-4">
+                        <div class="services-box-05 mb-30 hover-zoomin wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
+                           <div class="services-icon-05">
+                               <a href="single-service.html"><img src="{{asset('')}}assets/img/bg/kh.jpg" alt="icon01"></a>
+                           </div>
+                           <div class="services-content-05">
+                              <div class="icon">                             
+                                  <h4><a href="single-service.html">Biomass Pellet Products</a> </h4>
+                              </div>
+                              <p>Fuel pellets made from agricultural waste like husk, sawdust, and crop residue used as a clean energy source.</p>
+                           </div>
+                        </div>
+                        </div>
+                   <div class="col-lg-4">
+                       <div class="services-box-05 mb-30 hover-zoomin wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
+                           <div class="services-icon-05">
+                               <a href="single-service.html"><img src="{{asset('')}}assets/img/bg/poultry.jpeg" alt="icon01"></a>
+                           </div>
+                           <div class="services-content-05">
+                              <div class="icon">
+                                  <h4><a href="single-service.html">Poultry Farming</a> </h4>
+                              </div>
+                              <p>Scientific rearing of chickens for eggs and meat production.</p>
+                           </div>
+                        </div>
+                        </div>
+               
+               </div>
             </div>
-            <!-- <div class="col-lg-4 col-md-6">
-         	    <div class="single-service-box">
-         	    	<div class="service-thumb">
-         	    		<img src="assets/images/services-4.png" alt="">
-         	    	</div>
-         	    	<div class="service-content">
-         	    		<div class="services-icon">
-         	    			<img src="assets/images/service-icon-4.png" alt="">
-         	    		</div>
-         	    		<a href="service-details.html">Carbon Offseting</a>
-         	    		<p>Alternative innovation to ethical network environmental whiteboard</p>
-         	    		<div class="service-button">
-         	    			<a href="service.html">Discover More<i class="bi bi-arrow-right-short"></i></a>
-         	    		</div>
-         	    	</div>
-         	    </div>
-           </div>	
-            <div class="col-lg-4 col-md-6">
-         	    <div class="single-service-box">
-         	    	<div class="service-thumb">
-         	    		<img src="assets/images/services-5.png" alt="">
-         	    	</div>
-         	    	<div class="service-content">
-         	    		<div class="services-icon">
-         	    			<img src="assets/images/service-icon-5.png" alt="">
-         	    		</div>
-         	    		<a href="service-details.html">Renewable Energy</a>
-         	    		<p>Alternative innovation to ethical network environmental whiteboard</p>
-         	    		<div class="service-button">
-         	    			<a href="service.html">Discover More<i class="bi bi-arrow-right-short"></i></a>
-         	    		</div>
-         	    	</div>
-         	    </div>
-           </div>
-           <div class="col-lg-4 col-md-6">
-         	    <div class="single-service-box">
-         	    	<div class="service-thumb">
-         	    		<img src="assets/images/services-6.png" alt="">
-         	    	</div>
-         	    	<div class="service-content">
-         	    		<div class="services-icon">
-         	    			<img src="assets/images/service-icon-6.png" alt="">
-         	    		</div>
-         	    		<a href="service-details.html">Global Warming</a>
-         	    		<p>Alternative innovation to ethical network environmental whiteboard</p>
-         	    		<div class="service-button">
-         	    			<a href="service.html">Discover More<i class="bi bi-arrow-right-short"></i></a>
-         	    		</div>
-         	    	</div>
-         	    </div>
-           </div>	 -->
-		</div>
-
-
-
-		<div class="row">
-		    <div class="col-lg-4 col-md-6">
-         	    <div class="single-service-box">
-         	    	<div class="service-thumb">
-         	    		<img src="assets/images/home1/fis.png" alt="">
-         	    	</div>
-         	    	<div class="service-content">
-         	    		<div class="services-icon">
-         	    			<img src="assets/images/service-icon-1.png" alt="">
-         	    		</div>
-         	    		<a href="service-details.html">Fish Farming(Benefits)</a>
-         	    		<p>Fish farming, also known as aquaculture, is the scientific and controlled cultivation of fish like Rohu, Catla, Mrigal, and other freshwater or marine species in ponds, tanks, cages, or raceways for commercial purposes. It plays a crucial role in meeting the growing demand for protein-rich food and offers excellent opportunities for income and employment.High returns in a short time
-
-Rich source of protein for the market
-
-Good demand throughout the year
-
-Dual use of water for farming and fishery
-
-Creates rural employment</p>
-</br></br>
-         	    	</div>
-         	    </div>
-           </div>			  
-            <div class="col-lg-4 col-md-6">
-         	    <div class="single-service-box">
-         	    	<div class="service-thumb">
-         	    		<img src="assets/images/home1/nrd-D6Tu_L3chLE-unsplash.jpg" alt="">
-         	    	</div>
-         	    	<div class="service-content">
-         	    		<div class="services-icon">
-         	    			<img src="assets/images/service-icon-2.png" alt="">
-         	    		</div>
-         	    		<a href="#">Organic Stores(Benefits)</a>
-         	    		<p>Organic stores are retail outlets that sell chemical-free and naturally grown products such as fruits, vegetables, grains, pulses, dairy items, spices, and daily essentials. These products are sourced directly from organic farms where no synthetic pesticides, fertilizers, or GMOs are used, ensuring a healthy and environmentally friendly lifestyle for consumers.Safe, chemical-free products
-
-Preferred by health-conscious consumers
-
-Fair prices for organic farmers
-
-Environmentally sustainable
-
-Growing demand in urban markets</p>
-         	    	</div>
-         	    </div>
-           </div>			   
-            <div class="col-lg-4 col-md-6">
-         	    <div class="single-service-box">
-         	    	<div class="service-thumb">
-         	    		<img src="assets/images/home1/kh.jpg" alt="">
-         	    	</div>
-         	    	<div class="service-content">
-         	    		<div class="services-icon">
-         	    			<img src="assets/images/service-icon-3.png" alt="">
-         	    		</div>
-         	    		<a href="#">Biomass Pellet Products(Benefits)</a>
-         	    		<p>Biomass pellets are eco-friendly fuel alternatives made from agricultural waste such as husk, sawdust, straw, sugarcane bagasse, and crop residues. These compressed cylindrical pellets are used as a clean, renewable energy source for industrial heating, power generation, and even household cooking/heating systems.Eco-friendly fuel alternative
-
-Reduces dependence on coal or firewood
-
-Useful in industrial heating applications
-
-Recycles agricultural waste
-
-Supports green energy initiatives</p>
-</br>
-         	    	</div>
-         	    </div>
+         </section>
+         <!-- services-three-area -->
+           <!-- services-five-area -->
+         <!-- <section id="services-05" class="services-05 pt-120 pb-100 p-relative fix" style="background: url(../assets/img/bg/services-bg.png); background-repeat: no-repeat;">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-12">
+                     <div class="section-title center-align mb-20">
+                        <h5>Our Services</h5>
+                        <h2>
+                           What We Provide
+                        </h2>
+                     </div>
+                  </div>
+                     <div class="col-lg-6 col-md-6 text-right  d-none d-lg-block">
+                     <a href="#contact" class="btn ss-btn wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">View Al Services</a>
+                  </div>
+                  <div class="col-lg-12">
+                     <div class="services-active">
+                        <div class="services-box-05 wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
+                           <div class="services-icon-05">
+                               <a href="single-service.html"><img src="{{asset('')}}assets/img/bg/services-05.jpg" alt="icon01"></a>
+                           </div>
+                           <div class="services-content-05">
+                              <div class="icon">
+                                 <span><img src="{{asset('')}}assets/img/icon/sve-icon1.png" alt="icon01"></span> 
+                                  <h4> <a href="single-service.html">Top Quality Milk Products</a></h4>
+                              </div>
+                              <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea such and asser sharing listically</p>
+                           </div>
+                        </div>
+                        <div class="services-box-05 wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
+                           <div class="services-icon-05">
+                               <a href="single-service.html"><img src="{{asset('')}}assets/img/bg/services-06.jpg" alt="icon01"></a>
+                           </div>
+                           <div class="services-content-05">
+                              <div class="icon">
+                                 <span><img src="{{asset('')}}assets/img/icon/sve-icon2.png" alt="icon01"></span> 
+                                  <h4> <a href="single-service.html">Natural Feeds For Cow’s</a></h4>
+                              </div>
+                              <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea such and asser sharing listically</p>
+                           </div>
+                        </div>
+                        <div class="services-box-05 wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
+                           <div class="services-icon-05">
+                               <a href="single-service.html"><img src="{{asset('')}}assets/img/bg/services-07.jpg" alt="icon01"></a>
+                           </div>
+                           <div class="services-content-05">
+                              <div class="icon">
+                                 <span><img src="{{asset('')}}assets/img/icon/sve-icon3.png" alt="icon01"></span> 
+                                  <h4> <a href="single-service.html">Hand Milking Cow Milk</a></h4>
+                              </div>
+                              <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea such and asser sharing listically</p>                          
+                           </div>
+                        </div>
+                        <div class="services-box-05 wow fadeInUp  animated" data-animation="fadeInUp" data-delay=".4s">
+                           <div class="services-icon-05">
+                               <a href="single-service.html"><img src="{{asset('')}}assets/img/bg/services-06.jpg" alt="icon01"></a>
+                           </div>
+                           <div class="services-content-05">
+                              <div class="icon">
+                                 <span><img src="{{asset('')}}assets/img/icon/sve-icon2.png" alt="icon01"></span> 
+                                  <h4> <a href="single-service.html">Natural Feeds For Cow’s</a></h4>
+                              </div>
+                              <p>Seamlessly visualize quality ellectual capital without superior collaboration and idea such and asser sharing listically</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <!-- <div class="col-lg-4 col-md-6">
-         	    <div class="single-service-box">
-         	    	<div class="service-thumb">
-         	    		<img src="assets/images/services-4.png" alt="">
-         	    	</div>
-         	    	<div class="service-content">
-         	    		<div class="services-icon">
-         	    			<img src="assets/images/service-icon-4.png" alt="">
-         	    		</div>
-         	    		<a href="service-details.html">Carbon Offseting</a>
-         	    		<p>Alternative innovation to ethical network environmental whiteboard</p>
-         	    		<div class="service-button">
-         	    			<a href="service.html">Discover More<i class="bi bi-arrow-right-short"></i></a>
-         	    		</div>
-         	    	</div>
-         	    </div>
-           </div>	
-            <div class="col-lg-4 col-md-6">
-         	    <div class="single-service-box">
-         	    	<div class="service-thumb">
-         	    		<img src="assets/images/services-5.png" alt="">
-         	    	</div>
-         	    	<div class="service-content">
-         	    		<div class="services-icon">
-         	    			<img src="assets/images/service-icon-5.png" alt="">
-         	    		</div>
-         	    		<a href="service-details.html">Renewable Energy</a>
-         	    		<p>Alternative innovation to ethical network environmental whiteboard</p>
-         	    		<div class="service-button">
-         	    			<a href="service.html">Discover More<i class="bi bi-arrow-right-short"></i></a>
-         	    		</div>
-         	    	</div>
-         	    </div>
-           </div>
-           <div class="col-lg-4 col-md-6">
-         	    <div class="single-service-box">
-         	    	<div class="service-thumb">
-         	    		<img src="assets/images/services-6.png" alt="">
-         	    	</div>
-         	    	<div class="service-content">
-         	    		<div class="services-icon">
-         	    			<img src="assets/images/service-icon-6.png" alt="">
-         	    		</div>
-         	    		<a href="service-details.html">Global Warming</a>
-         	    		<p>Alternative innovation to ethical network environmental whiteboard</p>
-         	    		<div class="service-button">
-         	    			<a href="service.html">Discover More<i class="bi bi-arrow-right-short"></i></a>
-         	    		</div>
-         	    	</div>
-         	    </div>
-           </div>	 -->
-		</div>
-	</div>
-
-
-
-	
-</div>
-<!--==================================================-->
-<!-- End Echofy Service Area Home-Two-->
-<!--==================================================-->
-
+         </section> -->
+         <!-- services-three-area -->
+             <!-- frequently-area -->
+            <section class="faq-area pb-120 p-relative fix">
+                <div class="container">
+                    <div class="row justify-content-center">
+                       
+                        <div class="col-lg-6">
+                               <div class="faq-wrap pr-30 wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                                <button class="faq-btn" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree"  >
+                                                   01 Cras turpis felis, elementum sed mi at arcu ?
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse show" 
+                                            data-bs-parent="#accordionExample">
+                                            <div class="card-body">
+                                                Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0">
+                                                <button class="faq-btn collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne"  >
+                                                   02 Vestibulum nibh risus, in neque eleifendulputate sem ?
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" data-bs-parent="#accordionExample">
+                                            <div class="card-body">
+                                                Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0">
+                                                <button class="faq-btn collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwo"  >
+                                                  03 Donec maximus, sapien id auctor ornare ?
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" data-bs-parent="#accordionExample">
+                                            <div class="card-body">
+                                              Our community is being called to reimagine the future. As the only university where a renowned design school comes together with premier colleges, we are making learning more relevant and transformational. We are enriched by the wide range.
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>               
+                        </div>
+					    <div class="col-lg-6">
+                           <div class="section-title wow fadeInLeft animated mb-20" data-animation="fadeInDown animated" data-delay=".2s">
+                               <h5>Our FAQ</h5>
+                                <h2>Get every single answer here.</h2>                                
+                            </div>
+                            <p>Aliquam at magna et mi interdum rhoncus quis sit amet lorem. Mauris aliquet, nunc blandit viverra aliquam, odio quam ultrices felis, eget aliquam ipsum libero ut enim. Sed sodales, tortor eget lacinia lacinia.</p>
+                            <p>usce vel pulvinar enim. Donec mollis augue sit amet venenatis eleifend. Duis nisl arcu, posuere nec ullamcorper nec, viverra nec nisi.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- frequently-area-end -->	
+              <!-- brand-area -->
+            <div class="brand-area pb-120">
+                <div class="container">
+                    <div class="row brand-active">
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                <img src="{{asset('')}}assets/img/brand/b-logo1.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                 <img src="{{asset('')}}assets/img/brand/b-logo2.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                 <img src="{{asset('')}}assets/img/brand/b-logo3.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                  <img src="{{asset('')}}assets/img/brand/b-logo4.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                 <img src="{{asset('')}}assets/img/brand/b-logo5.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                <img src="{{asset('')}}assets/img/brand/b-logo1.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                 <img src="{{asset('')}}assets/img/brand/b-logo2.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                 <img src="{{asset('')}}assets/img/brand/b-logo3.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                  <img src="{{asset('')}}assets/img/brand/b-logo4.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="single-brand">
+                                 <img src="{{asset('')}}assets/img/brand/b-logo5.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- brand-area-end -->        
+         
+        </main>
 
 @include('layouts.mainsite.footer')

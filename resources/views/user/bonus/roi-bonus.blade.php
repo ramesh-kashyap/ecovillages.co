@@ -1,14 +1,13 @@
-<div class="dashboard-body">
 
+<div class="content-body" style="min-height: 732px;">
     <div class="container-fluid">
-        <div class="flex-between mb-32 gap-3">
-            <h2 class="fs-30">Reccuring Income</h2>
-            <!-- <div class="flex-align gap-2">
-                <a href="{{route('user.ticket')}}"
-                    class="btn btn--sm btn--base "> <i class="fas fa-plus"></i>
-                    New Ticket</a>
-            </div> -->
+        <div class="row page-titles">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active"><a href="javascript:void(0)">ROI </a></li>
+                <li class="breadcrumb-item"><a href="javascript:void(0)">ROI Income</a></li>
+            </ol>
         </div>
+        <!-- row -->
         <div class="row justify-content-center mt-4">
             <div class="col-md-12">
                 <div class="card custom--card h-100">
@@ -54,11 +53,8 @@
                                 <tr>
                                     <td colspan="100%">
                                         <div class="empty-message ">
-                                            <p class="empty-message-icon">
-                                                <img src="https://script.viserlab.com/viserasset/assets/templates/basic/images/no-data.gif"
-                                                    alt="image">
-                                            </p>
-                                            <p class="empty-message-text">No history found</p>
+                                          
+                                            <p class="empty-message-text text-center">No history found</p>
                                         </div>
                                     </td>
                                 </tr>

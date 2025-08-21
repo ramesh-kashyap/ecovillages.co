@@ -1,82 +1,15 @@
-<div class="dashboard-body">
-
+<div class="content-body" style="min-height: 732px;">
     <div class="container-fluid">
-        <div class="flex-between mb-32 gap-3">
-            <h2 class="fs-30">My Profile</h2>
+        <div class="row page-titles">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active"><a href="javascript:void(0)">Profile </a></li>
+                <li class="breadcrumb-item"><a href="javascript:void(0)">Profile Update</a></li>
+            </ol>
         </div>
-        <div class="mb-4">
+        <!-- row -->
             <div class="row gy-4">
-                <div class="col-lg-5 col-xxl-4">
-                    <div class="card custom--card h-100">
-                        <div class="card-body">
-                            <div class="profile-preview mb-4">
-                                <div class="profile-preview__banner"></div>
-                                <div class="profile-preview__thumb">
-                                    <img id="preview-image"
-                                        src="{{asset('')}}user-asset/images/male3-512.webp"
-                                        alt="Profile Preview" />
-                                </div>
-                            </div>
-
-                            <div class="personal-info">
-                                <h6 class="mb-3">Personal Information</h6>
-                                <ul class="personal-info__list">
-                                    <li class="personal-info__item">
-                                        <span class="title">First Name</span>
-                                        <span class="devide">:</span>
-                                        <span class="desc">{{ $profile_data->name }}</span>
-                                    </li>
-                                    <li class="personal-info__item">
-                                        <span class="title">Last Name</span>
-                                        <span class="devide">:</span>
-                                        <span class="desc">{{ $profile_data->lastname }}</span>
-                                    </li>
-                                    <li class="personal-info__item">
-                                        <span class="title">Email</span>
-                                        <span class="devide">:</span>
-                                        <span class="desc">{{ $profile_data->email }}</span>
-                                    </li>
-                                    <li class="personal-info__item">
-                                        <span class="title">Mobile</span>
-                                        <span class="devide">:</span>
-                                        <span class="desc">{{ $profile_data->phone }}</span>
-                                    </li>
-                                    <li class="personal-info__item">
-                                        <span class="title">Address</span>
-                                        <span class="devide">:</span>
-                                        <span class="desc">{{ $profile_data->address }}</span>
-                                    </li>
-                                    <li class="personal-info__item">
-                                        <span class="title">State</span>
-                                        <span class="devide">:</span>
-                                        <span class="desc">{{ $profile_data->state }}</span>
-                                    </li>
-                                    <li class="personal-info__item">
-                                        <span class="title">Zip Code</span>
-                                        <span class="devide">:</span>
-                                        <span class="desc">{{ $profile_data->zipCode }}</span>
-                                    </li>
-                                    <li class="personal-info__item">
-                                        <span class="title">City</span>
-                                        <span class="devide">:</span>
-                                        <span class="desc">{{ $profile_data->city }}</span>
-                                    </li>
-                                    <li class="personal-info__item">
-                                        <span class="title">Country</span>
-                                        <span class="devide">:</span>
-                                        <span class="desc">{{ $profile_data->country }}</span>
-                                    </li>
-                                      <li class="personal-info__item">
-                                        <span class="title">Wallet Address</span>
-                                        <span class="devide">:</span>
-                                        <span class="desc">{{ $profile_data->usdtBep20 }}</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-xxl-8">
+               
+                <div class="col-lg-12 col-xxl-12">
                     <div class="card custom--card profile-card h-100">
                         <div class="card-body">
                             <form class="register" method="post" action="{{route('user.update-profile')}}" enctype="multipart/form-data">
@@ -114,7 +47,7 @@
                                             <label for="name" class="form--label fs-14">First
                                                 Name</label>
                                             <input type="text" id="name" name="name" placeholder="enter your first name"
-                                                value="{{$profile_data->name}}" class="form--control md-style" />
+                                                value="{{$profile_data->name}}" class="form-control form--control md-style" />
                                         </div>
                                     </div>
 
@@ -123,7 +56,7 @@
                                             <label for="lastname" class="form--label fs-14">Last
                                                 LastName</label>
                                             <input type="lastname" id="email" name="lastname" placeholder="enter your lastname"
-                                                value="{{$profile_data->lastname}}" class="form--control md-style" />
+                                                value="{{$profile_data->lastname}}" class="form-control form--control md-style" />
                                         </div>
                                     </div>
 
@@ -172,9 +105,8 @@
                                     </div>
 
 
-                                    <div class="col-12">
-                                        <button type="submit" class="btn btn--base btn--md w-100">
-                                            Update Profile </button>
+                                    <div class="col-12 mt-4">
+                                       <button type="submit" class="btn me-2 btn-primary">Update Profile</button>
                                     </div>
                                 </div>
                             </form>
@@ -185,7 +117,7 @@
         </div>
     </div>
 
-</div>
+
 @include('partials.notify')
 
 <script>

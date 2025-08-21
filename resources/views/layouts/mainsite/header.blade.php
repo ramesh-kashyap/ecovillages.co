@@ -1,197 +1,121 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!doctype html>
+<html class="no-js" lang="zxx">
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Ecovillages </title>
+	<title>Ecovillages</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="{{asset('')}}assets/img/favicon.png">
+	<!-- Place favicon.ico in the root directory -->
 
-	<!-- bootstrap CSS -->
-	<link rel="stylesheet" href="{{asset('')}}assets/css/bootstrap.min.css" type="text/css" media="all">
-	<!-- carousel CSS -->
-	<link rel="stylesheet" href="{{asset('')}}assets/css/owl.carousel.min.css" type="text/css" media="all">
-	<!-- animate CSS -->
-	<link rel="stylesheet" href="{{asset('')}}assets/css/animate.css" type="text/css" media="all">
-	<!-- animated-text CSS -->
-	<link rel="stylesheet" href="{{asset('')}}assets/css/animated-text.css" type="text/css" media="all">
-	<!-- font-awesome CSS -->
-	<link rel="stylesheet" href="{{asset('')}}assets/css/all.min.css" type="text/css" media="all">
-	<!-- font-flaticon CSS -->
-	<link rel="stylesheet" href="{{asset('')}}assets/css/flaticon.css" type="text/css" media="all">
-	<!-- theme-default CSS -->
-	<link rel="stylesheet" href="{{asset('')}}assets/css/theme-default.css" type="text/css" media="all">
-	<!-- meanmenu CSS -->
-	<link rel="stylesheet" href="{{asset('')}}assets/css/meanmenu.min.css" type="text/css" media="all">
-	<!-- transitions CSS -->
-	<link rel="stylesheet" href="{{asset('')}}assets/css/owl.transitions.css" type="text/css" media="all">
-	<!-- venobox CSS -->
-	<link rel="stylesheet" href="{{asset('')}}venobox/venobox.css" type="text/css" media="all">
-	<!-- bootstrap icons -->
-	<link rel="stylesheet" href="{{asset('')}}assets/css/bootstrap-icons.css" type="text/css" media="all">
-	<!-- Main Style CSS -->
-	<link rel="stylesheet" href="{{asset('')}}assets/css/style.css" type="text/css" media="all">
-	<!-- responsive CSS -->
-	<link rel="stylesheet" href="{{asset('')}}assets/css/responsive.css" type="text/css" media="all">
-	<!-- modernizr js -->
-	<script src="{{asset('')}}assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<!-- CSS here -->
+	<link rel="stylesheet" href="{{asset('')}}assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{asset('')}}assets/css/animate.min.css">
+	<link rel="stylesheet" href="{{asset('')}}assets/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="{{asset('')}}assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="{{asset('')}}assets/css/dripicons.css">
+	<link rel="stylesheet" href="{{asset('')}}assets/css/slick.css">
+	<link rel="stylesheet" href="{{asset('')}}assets/css/meanmenu.css">
+	<link rel="stylesheet" href="{{asset('')}}assets/css/default.css">
+	<link rel="stylesheet" href="{{asset('')}}assets/css/style.css">
+	<link rel="stylesheet" href="{{asset('')}}assets/css/responsive.css">
 </head>
 
 <body>
-
-	<!-- loder -->
-	<!--<div class="loader-wrapper">-->
-	<!--	<span class="loader"></span>-->
-	<!--	<div class="loder-section left-section"></div>-->
-	<!--	<div class="loder-section right-section"></div>-->
-	<!--</div>-->
-
-
-	<!--==================================================-->
-	<!-- Start Echofy Top Header Area -->
-	<!--==================================================-->
-	<!-- <div class="top-header-area" style="background-color:#000;">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-6 col-md-6">
-					<div class="top-header-info">
-						<ul>
-							<li><i class="bi bi-geo-alt" style="color:white;"></i>New market Sandigo - California</li>
-							<li><i class="bi bi-envelope-open" style="color:white;"></i> ecovillages@gmail.com</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6">
-					<div class="top-header-right">
-						<div class="top-header-contact">
-							<span><i class="bi bi-telephone-fill" style="color:white;"></i>+123 (4567) 890</span>
+	<!-- Cursor -->
+	<div class="cursor js-cursor"></div>
+	<!-- header -->
+	<header class="header-area header">
+		<div id="header-sticky" class="menu-area">
+			<div class="container">
+				<div class="second-menu">
+					<div class="row align-items-center">
+						<div class="col-xl-3 col-lg-3">
+							<div class="logo">
+								<a href="{{route('index')}}"><img src="{{asset('')}}assets/img/logo/ecovillage.png" alt="logo" width="150" style="margin-bottom: 10px;"></a>
+							</div>
 						</div>
-						<div class="top-header-social-icon">
-							<ul>
-								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-								<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-							</ul>
+						<div class="col-xl-6 col-lg-6">
+
+							<div class="main-menu text-right text-xl-right">
+								<nav id="mobile-menu">
+									<ul>
+										<li class="has-sub">
+											<a href="{{route('index')}}">Home</a>
+
+										</li>
+										<li><a href="{{route('about-us')}}">About</a></li>
+										<li><a href="{{route('services')}}">Services</a></li>
+										<li><a href="{{route('partners')}}">Team</a></li>
+
+
+
+										<li class="has-sub">
+											<a href="#">Pages</a>
+											<ul>
+												<!-- <li><a href="">Gallery</a></li> -->
+
+												<li><a href="{{route('faq')}}">Faq</a></li>
+												<li><a href="{{route('blog-details')}}">Blog</a></li>
+
+
+											</ul>
+										</li>
+
+										<li><a href="{{route('contact-us')}}">Contact</a></li>
+									</ul>
+								</nav>
+							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<!--==================================================-->
-	<!-- End Echofy Top Header Area -->
-	<!--==================================================-->
-
-
-
-	<!--==================================================-->
-	<!-- Start Echofy Header Area -->
-	<!--==================================================-->
-	<div class="header-area" id="sticky-header" >
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-3">
-					<div class="header-logo">
-						<a href="{{route('index')}}"><img src="{{asset('')}}assets/images/ecovillage.png" style="width: 140px;height:60px;filter:'brightnesh(0.55) invert(0)'" alt="ecovillage"></a>
-					</div>
-				</div>
-				<div class="col-lg-9">
-					<div class="header-menu">
-						<ul>
-							<li class="menu-item-has-children"><a href="{{route('index')}}">Home</a>
-
-							</li>
-							<li><a href="{{route('about-us')}}">About</a></li>
-							<!-- <li class="menu-item-has-children"><a href="#">Service<i class="fas fa-chevron-down"></i></a>
-                           <ul class="sub-menu">
-					      	  <li><a href="service.html">Service</a></li>
-					      	  <li><a href="service-details.html">Service Details</a></li>
-						   </ul>
-						</li> -->
-							<li class="menu-item-has-children"><a href="#">Services<i class="fas fa-chevron-down"></i></a>
-								<ul class="sub-menu">
-									<!-- <li><a href="about.html">About</a></li> -->
-									<li><a href="{{route('services')}}">Service</a></li>
-									<li><a href="{{route('partners')}}">Team</a></li>
-									<li><a href="{{route('faq')}}">Faqs</a></li>
-									<li><a href="{{route('blog-details')}}">Blogs</a></li>
+						<div class="col-xl-3 col-lg-3 text-right d-none d-lg-block text-right text-xl-right">
+							<div class="login">
+								<ul>
+									<li><a href="#" class="menu-tigger"><i class="fal fa-search"></i></a></li>
+									<li>
+										<div class="second-header-btn">
+											<a href="{{route('login')}}" class="btn">Login Now </a>
+										</div>
+									</li>
 								</ul>
-							</li>
-							<!-- <li class="menu-item-has-children"><a href="#">Blog<i class="fas fa-chevron-down"></i></a>
-                           <ul class="sub-menu">
-					      	  <li><a href="blog-grid.html">Blog Grid</a></li>
-					      	  <li><a href="blog-list.html">Blog List</a></li>
-					      	  <li><a href="blog-2column.html">Blog 2column</a></li>
-					      	  <li><a href="blog-details.html">Blog Details</a></li>
-						   </ul>
-						</li> -->
-							<li><a href="{{route('contact-us')}}">Contact</a></li>
-						</ul>
-						<div class="header-secrch-icon search-box-outer">
-							<a href="#"><i class="bi bi-search"></i></a>
-						</div>
-						<div class="header-button">
-						
-							<a href="{{ route('login') }}">Log in Now</a>
-							
+							</div>
 						</div>
 
+						<div class="col-12">
+							<div class="mobile-menu"></div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-
-	<div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none ">
-		<div class="mobile-menu">
-		  <!--  							<div class="col-lg-3">-->
-				<!--	<div class="header-logo">-->
-				<!--		<a href="{{route('index')}}"><img src="{{asset('')}}assets/images/ecovillage.png" style="width: 60px;height:60px;filter:'brightnesh(0.55) invert(0)'" alt="ecovillage"></a>-->
-				<!--	</div>-->
-				<!--</div>-->
-			<nav class="header-menu">
-
-				<ul class="nav_scroll">
-					<li class="menu-item-has-children"><a href="{{route('index')}}">Home</a>
-
-					</li>
-					<li><a href="{{route('about-us')}}">About</a></li>
-					<!-- <li class="menu-item-has-children"><a href="#">Service</a>
-                   <ul class="sub-menu">
-			      	  <li><a href="service.html">Service</a></li>
-			      	  <li><a href="service-details.html">Service Details</a></li>
-				   </ul>
-				</li> -->
-					<li class="menu-item-has-children"><a href="#">Services</a>
-						<ul class="sub-menu">
-							<!-- <li><a href="about.html">About</a></li> -->
-							<li><a href="{{route('services')}}">Service</a></li>
-							<li><a href="{{route('partners')}}">Team</a></li>
-							<li><a href="{{route('faq')}}">Faqs</a></li>
-                         	<li><a href="{{route('blog-details')}}">Blogs</a></li>
-						</ul>
-					</li>
-					<!-- <li class="menu-item-has-children"><a href="#">Blog</a>
-                   <ul class="sub-menu">
-			      	  <li><a href="blog-grid.html">Blog Grid</a></li>
-			      	  <li><a href="blog-list.html">Blog List</a></li>
-			      	  <li><a href="blog-2column.html">Blog 2column</a></li>
-			      	  <li><a href="blog-details.html">Blog Details</a></li>
-				   </ul>
-				</li> -->
-					<li><a href="{{route('contact-us')}}">Contact</a></li>
-										<li><a href="{{route('register')}}">Register </a></li>
-
-					<li><a href="{{route('login')}}">Login </a></li>
-				</ul>
-			</nav>
+	</header>
+	<!-- header-end -->
+	<!-- offcanvas-area -->
+	<div class="offcanvas-menu">
+		<span class="menu-close"><i class="fas fa-times"></i></span>
+		<form role="search" method="get" id="searchform" class="searchform" action="http://wordpress.zcube.in/xconsulta/">
+			<input type="text" name="s" id="search" placeholder="Search" />
+			<button><i class="fa fa-search"></i></button>
+		</form>
+		<div id="cssmenu3" class="menu-one-page-menu-container">
+			<ul class="menu">
+				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{route('index')}}">Home</a></li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{route('about-us')}}">About Us</a></li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{route('services')}}">Services</a></li>
+				<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="pricing.">Pricing </a></li> -->
+				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{route('partners')}}">Team </a></li>
+				<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="">Cases Study</a></li> -->
+				<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="blog.html">Blog</a></li> -->
+				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="{{route('contact-us')}}">Contact</a></li>
+			</ul>
+		</div>
+		<div id="cssmenu2" class="menu-one-page-menu-container">
+			<ul id="menu-one-page-menu-12" class="menu">
+				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#home"><span>+8 12 3456897</span></a></li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#howitwork"><span>info@example.com</span></a></li>
+			</ul>
 		</div>
 	</div>
-	<!--==================================================-->
-	<!-- End Main Menu Area -->
-	<!--==================================================-->
+	<div class="offcanvas-overly"></div>
+	<!-- offcanvas-end -->

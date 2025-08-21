@@ -122,6 +122,18 @@ public function sponsorUser()
     {
         return $this->hasMany('App\Models\Income', 'user_id', 'id')->where('remarks', 'Matching Bonus');
     }
+    public function getTotalBonus()
+{
+    $totalBonus = $this->salaryBonus->sum('comm') +
+                  $this->contractpBonus->sum('comm') +
+                  $this->samerankBonus->sum('comm') +
+                  $this->level_bonus->sum('comm') +
+                  $this->dailyIncentive->sum('comm') +
+                  $this->refer_bonus->sum('comm');
+
+    return $totalBonus;
+}
+
 
     public function salaryBonus()
     {

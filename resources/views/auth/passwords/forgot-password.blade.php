@@ -31,12 +31,15 @@
 
 </head>
 
-<body class="vh-100" data-typography="cairo" data-theme-version="dark" data-layout="vertical" data-nav-headerbg="color_1" data-headerbg="color_1" data-sidebar-style="full" data-sidebarbg="color_1" data-sidebar-position="fixed" data-header-position="fixed" data-container="wide" direction="ltr" data-primary="color_1">
-	<div class="authincation h-100">
+<body style="background-color: #152621ff;">
+		<div class="authincation h-100">
 		<div class="container-fluid h-100">
 			<div class="row h-100">
-				<div class="col-lg-6 col-md-12 col-sm-12 mx-auto align-self-center">
+				<div class="col-lg-6 col-md-12 col-sm-12 mx-auto align-self-center" style="background-color: #202020;">
 					<div class="login-form">
+							<div class="text-center mb-3">
+										<a href="{{route('index')}}"><img src="{{asset('')}}assets/img/logo/ecovillage.png" width="150" height="70" alt=""></a>
+									</div>
 						<div class="text-center">
 							<h3 class="title">Fogot Password</h3>
 							<p>Sign in to your account to start using Ecovillages</p>
@@ -47,17 +50,17 @@
 							@csrf
 							<div class="mb-4">
 								<label class="mb-1 text-dark">Email</label>
-								<input type="email" class="form-control" name="email" required>
+								<input type="email" class="form-control" style="background:#161717;border-color:#2B2B2B;" name="email" placeholder="Enter email"  required>
 							</div>
 
 							<div class="mb-4 position-relative">
 								<label class="mb-1 text-dark">Verification Code</label>
-								<div class="input-group">
-									<input type="text" class="form-control" name="code" placeholder="Enter Code" required>
+								<div class="input-group" >
+									<input type="text" style="background:#161717;border-color:#2B2B2B;" class="form-control" name="code" placeholder="Enter Code" required>
 									<div class="">
 										<!-- Send Button with Countdown -->
 
-										<button type="button" style="width:40px;height:56px;background-color: #212130;color:white;border-radius: 0 1rem 1rem 0;border:1px solid #31303c;" class="btn" id="sendButton" onclick="sendVerificationCode()">
+										<button type="button" style="width:40px;height:56px;background-color: #202020;color:white;border-radius: 0 1rem 1rem 0;border:1px solid #31303c;" class="btn" id="sendButton" onclick="sendVerificationCode()">
 											<span id="buttonLabel" style="margin: -12px;font-size:15px;">Send</span>
 											<span id="countdownTimer" style="display: none;margin: -12px;font-size:18px;"></span>
 										</button>
@@ -70,7 +73,7 @@
 
 							<div class="mb-4 position-relative">
 								<label class="mb-1 text-dark">New Password</label>
-								<input type="password" name="password" class="form-control" id="newPassword" required>
+								<input type="password" name="password"style="background:#161717;border-color:#2B2B2B;" placeholder="Enter new password"  class="form-control" id="newPassword" required>
 								<span class="show-pass eye" onclick="togglePassword('newPassword', 'eye1', 'eyeSlash1')">
 									<i class="fa fa-eye-slash" id="eyeSlash1" style="display: none;"></i>
 									<i class="fa fa-eye" id="eye1"></i>
@@ -79,7 +82,7 @@
 
 							<div class="mb-4 position-relative">
 								<label class="mb-1 text-dark">Confirm Password</label>
-								<input type="password" name="password_confirmation" class="form-control" id="confirmPassword" required>
+								<input type="password" style="background:#161717; border-color:#2B2B2B;"name="password_confirmation"  placeholder="Enter confirm password" class="form-control" id="confirmPassword" required>
 								<span class="show-pass eye" onclick="togglePassword('confirmPassword', 'eye2', 'eyeSlash2')">
 									<i class="fa fa-eye-slash" id="eyeSlash2" style="display: none;"></i>
 									<i class="fa fa-eye" id="eye2"></i>
@@ -99,7 +102,7 @@
 							</div>
 
 							<div class="text-center mb-4">
-								<button type="submit" class="btn btn-primary btn-block"style="background-color:rgb(73, 175, 69);">Reset Password</button>
+								<button type="submit" class="btn btn-primary btn-block"style="background-color: #20c997;">Reset Password</button>
 							</div>
 						</form>
 
